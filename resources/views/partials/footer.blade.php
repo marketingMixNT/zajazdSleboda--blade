@@ -84,13 +84,13 @@
             <div
                 class="max-w-screen-lg mx-4 sm:mx-24 xl:mx-auto text-sm  flex justify-between items-center"
             >
-                <Link
+                <a
                     href=""
                     class="flex gap-2 justify-start items-center link-hover"
                 >
-                    <span>© 2024 </span>
+                    <span >© <span id="footer-year"></span></span>
                     <span>Śleboda Zajazd</span>
-                </Link>
+                </a>
                 <div>
                     <a
                         href="https://marketingmix.pl"

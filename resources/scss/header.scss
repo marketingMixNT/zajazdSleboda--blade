@@ -1,0 +1,14 @@
+#header{
+    transition: background-image 1s ease-in-out;
+  }
+    
+  
+//BACKGROUND IAMGE LIST
+  .bg-1 {
+    @apply bg-[url('../../public/assets/images/header2--big.jpg')] 
+  }
+  
+  .bg-2 {
+   
+    @apply bg-[url('../../public/assets/images/header--small.jpeg')] sm:bg-[url('../../public/assets/images/header--big.jpeg')]
+  }

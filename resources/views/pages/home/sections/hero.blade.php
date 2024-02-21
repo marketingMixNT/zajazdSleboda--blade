@@ -1,5 +1,5 @@
 
-    <section class="bg-[url('/assets/images/header--big.jpeg')] py-24 w-full bg-cover bg-center bg-no-repeat bg-gray-600 bg-blend-multiply flex  justify-center items-center px-4 md:px-0">
+    <section class="bg-[url('../../public/assets/images/header--small.jpeg')] sm:bg-[url('../../public/assets/images/header--big.jpeg')] py-48 w-full bg-cover bg-center bg-no-repeat bg-gray-600 bg-blend-multiply flex  justify-center items-center px-4 md:px-0">
     
         <div class="text-center inline-block text-fontLight max-w-screen-lg mx-auto">
     
@@ -15,9 +15,7 @@
     
     <h3 class="font-handwriting text-right text-2xl mt-2">Lorem ipsum dolor sit</h3>
     
-    <PrimaryButton class=" mt-24 border-white " :color="'white'"
-                ><a href="#" target="_blank">Rezerwuj</a></PrimaryButton
-            >
+    <x-base.secondary-button extraClasses="mt-16 px-20 lg:text-xl"><a href="#" >Rezerwuj</a></x-base.secondary-button> 
     </div>
     
     </section>

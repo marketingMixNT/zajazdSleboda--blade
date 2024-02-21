@@ -3,11 +3,12 @@
         class="flex justify-between items-center max-w-screen-xl mx-auto py-4 sm:py-10 px-4 md:px-12 2xl:px-0"
     >
         <!--LEFT SIDE-->
-        <div class="box ">
+        <div class="flex justify-center items-center gap-12 ">
             <div>
-                <hamburger @click="showModal = !showModal"/>
+                {{-- <hamburger @click="showModal = !showModal"/> --}}
+                <x-nav.hamburger-btn/>
             </div>
-            <a href="#" class="text-sm mb-1 hidden lg:inline-block duration-300 tel"
+            <a href="#" class="text-sm mb-1 hidden lg:inline-block duration-300 link-hover"
                 >+48 123 456 789</a
             >
         </div>
@@ -20,14 +21,12 @@
         />
     </a>
         <!--RIGHT SIDE-->
-        <div class="box ">
+        <div class="flex justify-center items-center gap-12 ">
         
-            <x-languages-switcher/>
+            <x-nav.languages-switcher/>
             <x-base.primary-button class="hidden sm:inline-block"><a href="#" >Rezerwuj</a></x-base.primary-button> 
         </div>
     </div>
 
-    <teleport to="body">
-        <menu :showModal="showModal" />
-    </teleport>
+
 </nav>

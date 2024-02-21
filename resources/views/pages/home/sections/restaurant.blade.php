@@ -35,7 +35,7 @@ Tradycyjna kuchnia w nowoczesnej odsłonie                </h2>
                     kształtują każde danie na naszym menu.
                 </p>
 
-                <LinkIcon>Sprawdź Menu</LinkIcon>
+                <x-base.link>Sprawdź Menu</x-base.link>
             </div>
     <img src="{{asset('/assets/images/dish/dish-1.jpeg')}}" alt="" class="hidden lg:block w-full object-cover"></div>
 <div class="flex flex-col justify-start">
