@@ -22,7 +22,7 @@
     @include('partials.nav.nav-bar')
     @include('partials.nav.menu')
 
-
+    <x-preloader/>
     {{ $slot }}
 
     @include('partials.footer')
