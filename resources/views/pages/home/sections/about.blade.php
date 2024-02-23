@@ -27,10 +27,10 @@
             </div>
             <!--TEXT-->
             <div class="flex flex-col justify-center items-start gap-12">
-                <h2 class="h2">
+                <h2 class="h2 ">
                     Nasza Historia
                 </h2>
-                <p class="text sm:mr-52">
+                <p class="text sm:mr-52 text-animation">
                     Założona z miłości do europejskiej kuchni, nasza restauracja
                     przechodziła fascynującą metamorfozę, aby zaoferować Ci
                     dzisiaj wyjątkowe doznania kulinarne. Poznaj naszą
@@ -43,7 +43,7 @@
                   
                 </div>
                 <!--IMG-->
-                <div class="overflow-hidden mt-6 lg:mt-12 w-full md:w-[90%] lg:w-auto mx-auto">
+                <div class="overflow-hidden mt-6 lg:mt-12 w-full md:w-[90%] lg:w-auto mx-auto ">
                     <img
                         src="/assets/images/header--small.jpeg"
                         class="ken-burns w-full h-full object-cover"

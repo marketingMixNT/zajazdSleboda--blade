@@ -5,11 +5,11 @@ class="relative flex flex-col justify-center items-center h-[calc(100vh-84px)] s
 > 
         <!--HEADING-->
         <span
-            class="mb-4 font-text text-sm 2xl:text-base font-semibold tracking-widest uppercase"
+            class="mb-4 font-text text-sm 2xl:text-base font-semibold tracking-widest uppercase heading-animation"
             >Lorem ipsum dolor sit.</span
         >
         <h1
-            class="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl tracking-wider uppercase font-heading font-bold "
+            class="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl tracking-wider uppercase font-heading font-bold heading-animation"
         >
             Zajazd Śleboda
         </h1>
