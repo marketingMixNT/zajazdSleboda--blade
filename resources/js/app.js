@@ -8,6 +8,10 @@ import './partials/observer'
 
 
 
+
+
+
+
 import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;

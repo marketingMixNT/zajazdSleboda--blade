@@ -10,17 +10,21 @@
     <title>@yield('title', 'Bentto')</title>
     <meta name="description" content='@yield('description')'>
 
-<!--Favicons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{asset('/assets/favicon/apple-touch-icon.png')}}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{asset('/assets/favicon/favicon-32x32.png')}}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{asset('/assets/favicon/favicon-16x16.png')}}">
-<link rel="manifest" href="{{asset('/assets/favicon/site.webmanifest')}}">
-<link rel="mask-icon" href="{{asset('/assets/favicon/safari-pinned-tab.svg')}}" color="#242424">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#242424">
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/assets/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('/assets/favicon/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('/assets/favicon/safari-pinned-tab.svg') }}" color="#242424">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#242424">
+
+   
 
     <!-- Scripts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+   
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
 </head>
@@ -30,8 +34,8 @@
     <!--NAVIGATION-->
     @include('partials.nav.nav-bar')
     @include('partials.nav.menu')
-<!--PRELOADER-->
-    <x-preloader/>
+    <!--PRELOADER-->
+    <x-preloader />
 
 
     {{ $slot }}
@@ -42,8 +46,13 @@
     <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-   
-            <script src="https://wis.upperbooking.com/owcedwie/be-panel?locale=pl" async></script>
+
+    <script src="https://wis.upperbooking.com/owcedwie/be-panel?locale=pl" async></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({  loop:true });
+      </script>
 </body>
 
 </html>

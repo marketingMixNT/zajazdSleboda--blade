@@ -1,3 +1,6 @@
 .apartments-hero {
     @apply bg-[url('../../public/assets/images/apartments/hero--small.jpeg')] sm:bg-[url('../../public/assets/images/apartments/hero--big.jpeg')]
   }
+.restaurant-hero {
+    @apply bg-[url('../../public/assets/images/restaurant/hero--small.jpeg')] sm:bg-[url('../../public/assets/images/restaurant/hero--big.jpeg')]
+  }

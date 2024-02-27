@@ -140,4 +140,47 @@ class MainController extends Controller
 
         return view('pages.apartments.index',['apartments'=>$apartments]);
     }
+
+    public function gallery() {
+        return view('pages.gallery.index');
+    }
+    public function restaurant() {
+
+        $images = [
+            '/assets/images/about-slider/slider--1.jpeg',
+            '/assets/images/about-slider/slider--2.jpg',
+            '/assets/images/about-slider/slider--3.jpg',
+            '/assets/images/about-slider/slider--4.jpg',
+            '/assets/images/about-slider/slider--5.jpeg',
+        ];
+
+        $menu = [
+            [
+                "title" => "Szef Kuchni poleca",
+                "img" => "assets/images/menu/chef.jpeg"
+            ],
+            [
+                "title" => "Sałatki",
+                "img" => "assets/images/menu/salad.jpeg"
+            ],
+            [
+                "title" => "Zupy",
+                "img" => "assets/images/menu/soup.jpeg"
+            ],
+            [
+                "title" => "Zestawy",
+                "img" => "assets/images/menu/set.jpeg"
+            ],
+            [
+                "title" => "Pizza",
+                "img" => "assets/images/menu/pizza.jpeg"
+            ],
+            [
+                "title" => "Napoje",
+                "img" => "assets/images/menu/drink.jpeg"
+            ],
+        ];
+
+        return view('pages.restaurant.index',['images'=>$images,'menu'=>$menu]);
+    }
 }

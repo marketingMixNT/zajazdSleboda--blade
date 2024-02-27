@@ -21,7 +21,7 @@
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"
                 >
-                    <a href="#" class="link">Restauracja</a>
+                    <a href="{{route('restaurant')}}" class="link">Restauracja</a>
                 </li>
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"
@@ -31,7 +31,7 @@
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"
                 >
-                    <a href="#" class="link">Galeria</a>
+                    <a href="{{route('gallery')}}" class="link">Galeria</a>
                 </li>
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"

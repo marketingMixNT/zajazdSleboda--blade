@@ -38,3 +38,22 @@ if(swiperEl){
   });
   swiperEl.initialize();
 }
+
+const swiperRestaurant = document.querySelector('.restaurant-swiper')
+if(swiperRestaurant){
+  Object.assign(swiperRestaurant, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+   
+    breakpoints: {
+   
+  
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 70,
+      },
+      
+    },
+  });
+  swiperRestaurant.initialize();
+}
