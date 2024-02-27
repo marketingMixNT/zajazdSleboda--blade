@@ -33,3 +33,4 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/',[MainController::class,'home'])->name('home');
+Route::get('/apartamenty',[MainController::class,'apartments'])->name('apartments');

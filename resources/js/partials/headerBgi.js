@@ -2,6 +2,8 @@ const images = ["bg-1", "bg-2"];
 let index = 0;
 const header = document.querySelector("#header");
 
+
+
 const changeBackground = () => {
     images.forEach(function (bgClass) {
         header.classList.remove(bgClass);
@@ -11,4 +13,6 @@ const changeBackground = () => {
     index = (index + 1) % images.length;
 };
 
-setInterval(changeBackground, 5000);
+if(header){
+    setInterval(changeBackground, 5000);
+}

@@ -70,4 +70,74 @@ class MainController extends Controller
 
         return view('pages.home.index', ['images' => $images,'apartments'=>$apartments,'menu'=>$menu]);
     }
+
+    public function apartments () {
+
+
+        $apartments = [
+            [
+                "title" => "Apatrament 1",
+                "img" => "assets/images/apartments/apartment-1.jpg",
+                "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+                consequatur ullam?",
+                "surface"=>"50 m2",
+                "persons"=>'max 4 os.',
+                "bed"=>'dwuosobowe',
+                'link'=>'#'
+            ],
+            [
+                "title" => "Apatrament 2",
+                "img" => "assets/images/apartments/apartment-2.jpeg",
+                "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+                consequatur ullam?",
+                "surface"=>"50 m2",
+                "persons"=>'max 4 os.',
+                "bed"=>'dwuosobowe',
+                'link'=>'#'
+            ],
+            [
+                "title" => "Apatrament 3",
+                "img" => "assets/images/apartments/apartment-3.jpeg",
+                "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+                consequatur ullam?",
+                "surface"=>"50 m2",
+                "persons"=>'max 4 os.',
+                "bed"=>'dwuosobowe',
+                'link'=>'#'
+            ],
+            [
+                "title" => "Apatrament 4",
+                "img" => "assets/images/apartments/apartment-4.jpeg",
+                "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+                consequatur ullam?",
+                "surface"=>"50 m2",
+                "persons"=>'max 4 os.',
+                "bed"=>'dwuosobowe',
+                'link'=>'#'
+            ],
+            [
+                "title" => "Apatrament 5",
+                "img" => "assets/images/apartments/apartment-5.jpeg",
+                "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+                consequatur ullam?",
+                "surface"=>"50 m2",
+                "persons"=>'max 4 os.',
+                "bed"=>'dwuosobowe',
+                'link'=>'#'
+            ],
+        ];
+
+
+        return view('pages.apartments.index',['apartments'=>$apartments]);
+    }
 }

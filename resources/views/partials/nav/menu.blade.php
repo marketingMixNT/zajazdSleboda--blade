@@ -16,7 +16,7 @@
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"
                 >
-                    <a href="#" class="link">Apartamenty</a>
+                    <a href="{{route('apartments')}}" class="link">Apartamenty</a>
                 </li>
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"
