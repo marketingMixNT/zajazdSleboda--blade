@@ -187,4 +187,30 @@ class MainController extends Controller
     public function menu(){
         return view('pages.menu.index');
     }
+    public function singleApartament(){
+
+
+        $images = [
+            '/assets/images/apartments/apartment-1.jpg',
+            '/assets/images/apartments/apartment-2.jpeg',
+            '/assets/images/apartments/apartment-3.jpeg',
+            '/assets/images/apartments/apartment-4.jpeg',
+            '/assets/images/apartments/apartment-5.jpeg',
+        ];
+
+        $apartments=[
+            ['title'=>'Apartament 1',
+            'image'=>  '/assets/images/apartments/apartment-1.jpg'],
+            ['title'=>'Apartament 2',
+            'image'=>  '/assets/images/apartments/apartment-2.jpeg'],
+            ['title'=>'Apartament 3',
+            'image'=>  '/assets/images/apartments/apartment-3.jpeg'],
+            ['title'=>'Apartament 4',
+            'image'=>  '/assets/images/apartments/apartment-4.jpeg'],
+            ['title'=>'Apartament 5',
+            'image'=>  '/assets/images/apartments/apartment-5.jpeg'],
+        ];
+
+        return view('pages.single-apartament.index',['images'=>$images,'apartaments'=>$apartments]);
+    }
 }

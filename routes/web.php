@@ -37,3 +37,4 @@ Route::get('/apartamenty',[MainController::class,'apartments'])->name('apartment
 Route::get('/galeria',[MainController::class,'gallery'])->name('gallery');
 Route::get('/restauracja',[MainController::class,'restaurant'])->name('restaurant');
 Route::get('/menu',[MainController::class,'menu'])->name('menu');
+Route::get('/apartament',[MainController::class,'singleApartament'])->name('apartament');
