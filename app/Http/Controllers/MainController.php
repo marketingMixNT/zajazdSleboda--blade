@@ -183,4 +183,8 @@ class MainController extends Controller
 
         return view('pages.restaurant.index',['images'=>$images,'menu'=>$menu]);
     }
+
+    public function menu(){
+        return view('pages.menu.index');
+    }
 }

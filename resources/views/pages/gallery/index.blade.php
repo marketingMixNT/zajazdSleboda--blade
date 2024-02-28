@@ -3,7 +3,7 @@
     @section('title', 'Galeria Zajazd Śleboda')
     @section('description', 'desc')
 
-    @include('pages.apartments.sections.header')
+    @include('pages.gallery.sections.header')
 
 
 

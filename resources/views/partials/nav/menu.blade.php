@@ -26,7 +26,7 @@
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"
                 >
-                    <a href="#" class="link">Menu</a>
+                    <a href="{{route('menu')}}" class="link">Menu</a>
                 </li>
                 <li
                     class="xs:text-2xl  md:text-7xl font-heading opacity-70 hover:opacity-100 duration-300 a"
