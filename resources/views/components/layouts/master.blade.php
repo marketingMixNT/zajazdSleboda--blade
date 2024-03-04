@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!--Title-->
-    <title>@yield('title', 'Bentto')</title>
+    <title>@yield('title', 'Zajaz Śleboda')</title>
     <meta name="description" content='@yield('description')'>
 
     <!--Favicons-->
@@ -42,6 +42,7 @@
 
     <!--FOOTER-->
     @include('partials.footer')
+    @include('partials.mobile-buttons')
 
     <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

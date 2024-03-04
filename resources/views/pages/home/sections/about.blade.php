@@ -23,6 +23,7 @@
                         @endforeach
                     </div>
                   </div>
+                  d
                 
             </div>
             <!--TEXT-->

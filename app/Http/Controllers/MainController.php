@@ -213,4 +213,9 @@ class MainController extends Controller
 
         return view('pages.single-apartament.index',['images'=>$images,'apartaments'=>$apartments]);
     }
+
+
+    public function contact(){
+        return view('pages.contact.index');
+    }
 }
