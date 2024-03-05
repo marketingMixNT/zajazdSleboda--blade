@@ -11,6 +11,6 @@
         </h3>
     </div>
     <div class="w-4/5 md:w-3/4 lg:w-2/5">
-        <p>{{ $text }}</p>
+        <p class="text">{{ $text }}</p>
     </div>
 </div>

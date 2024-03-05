@@ -1,8 +1,8 @@
 <x-layouts.master>
 
-    @section('title', 'Zajazd Śleboda')
+    @section('title', 'Zajazd Śleboda w Zębie: Komfortowe Pokoje i Restauracja w Tatrach')
     @section('description',
-        'desc')
+        'Odkryj Zajazd Śleboda w Zębie - Twoje idealne miejsce na odpoczynek w Tatrach. Oferujemy przytulne pokoje i wyśmienitą kuchnię w sercu gór. Zapraszamy!')
 
 @include('pages.home.sections.header')
 @include('pages.home.sections.about')

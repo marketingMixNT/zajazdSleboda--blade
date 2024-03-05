@@ -19,26 +19,24 @@ class MainController extends Controller
 
         $apartments = [
             [
-                "title" => "Apatrament 1",
-                "img" => "assets/images/apartments/apartment-1.jpg"
+                "title" => "Pokój z dwoma łóżkami  King-Size",
+                "img" => "assets/images/apartments/apartment-1.jpg",
+                'link' =>'#'
             ],
             [
-                "title" => "Apatrament 2",
-                "img" => "assets/images/apartments/apartment-2.jpeg"
+                "title" => "Pokój czteroosobowy z balkonem",
+                "img" => "assets/images/apartments/apartment-2.jpeg",
+                'link' =>'#'
             ],
             [
-                "title" => "Apatrament 3",
-                "img" => "assets/images/apartments/apartment-3.jpeg"
-            ],
-            [
-                "title" => "Apatrament 4",
-                "img" => "assets/images/apartments/apartment-4.jpeg"
-            ],
-            [
-                "title" => "Apatrament 5",
-                "img" => "assets/images/apartments/apartment-5.jpeg"
+                "title" => "Pokój dwuosobowy",
+                "img" => "assets/images/apartments/apartment-3.jpeg",
+                'link' =>'#'
             ],
         ];
+
+
+
         $menu = [
             [
                 "title" => "Szef Kuchni poleca",

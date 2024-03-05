@@ -1,8 +1,5 @@
-{{-- <template> --}}
     <!--CONTAINER-->
-    <section
-        id="about"
-        class="section"
+    <section id="about"
     >
     <div class="wrapper max-w-screen-2xl">
         <!--HEADING-->
@@ -23,7 +20,7 @@
                         @endforeach
                     </div>
                   </div>
-                  d
+                  
                 
             </div>
             <!--TEXT-->

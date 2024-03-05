@@ -1,34 +1,39 @@
-
-    <!--CONTAINER-->
+ <!--CONTAINER-->
     <section
         id="about"
         class=" bg-bgLight-400"
     >
-    <div class="wrapper">
+    <div class="wrapper max-w-screen-2xl">
         <!--HEADING-->
         <x-base.heading-horizontal
             subheading="Zajazd Śleboda"
-            heading="Nasze apartamenty"
-            decor="Lorem ipsum dolor"
-            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quas aspernatur eum voluptates, vero doloribus unde deserunt libero assumenda rem odio ad accusantium aliquid autem ipsa eligendi atque quibusdam perferendis."
+            heading="Nasze pokoje"
+            decor="Idealne miejsce na regenerację ciała i ducha"
+            text="W Zajazdzie Śleboda każdy pokój to oaza spokoju i relaksu, zaprojektowana z myślą o Twoim komforcie i zadowoleniu. Nasze pokoje łączą w sobie tradycyjną górską estetykę z nowoczesnymi udogodnieniami, tworząc idealne warunki do odpoczynku po dniu pełnym przygód w Tatrach. Odkryj miejsce, gdzie każdy szczegół został dopracowany, aby zapewnić Ci niezapomniane chwile wypoczynku."
         />
-        <!--CONTENT-->
-        <swiper >
+        <!--CONTENT SWIPER some styles in scss/swiper.scss js in js/partials/swiper.js-->
+        <swiper id="apartament-swiper">
+            <!--swiper-container-->
         <swiper-container class="mySwiper apartments-swiper" effect="coverflow" grab-cursor="true" centered-slides="true"
         slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
         coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" class="swiper-slide" autoplay-delay="5500" autoplay-disable-on-interaction="true" >
         @foreach ($apartments as $apartment)
-        <swiper-slide class="w-[240px] h-[240px] xs:w-[330px] xs:h-[330px] sm:w-[600px] sm:h-[600px] my-20 mx-12">
-            <div class="border border-black w-full h-full  ">
-                <img src="{{ asset($apartment['img']) }}" alt="" class="w-full h-[85%] object-cover">
+        <!--swiper-item-->
+        
+        <swiper-slide  class="my-6 lg:my-16 mx-16 w-[280px] h-[430px] xs:w-[350px] xs:h-[550px] md:w-[530px] md:h-[530px] 2xl:w-[700px] 2xl:h-[700px] ">
+            <div class="w-full h-full border border-secondary-400 ">
+                 <!--img-->
+                <img src="{{ asset($apartment['img']) }}" alt="zdjęcie przedstawiające {{$apartment['title']}}" class="w-full h-[70%] sm:h-[80%] object-cover">
 
-                <div class="flex justify-start items-center h-[15%] px-4">
-                    <h2 class="text-xl xs:text-3xl sm:text-4xl">{{$apartment['title']}}</h2>
-                    <div class=" border-r border-b border-l border-black p-4  info absolute bottom-0 left-0 right-0 top-[70%] bg-white bg-opacity-100 text-black   opacity-0 flex flex-col justify-around">
-                        <h2 class="text-xl xs:text-3xl  text-black text-start">{{$apartment['title']}}</h2>
+                <!--title-->
+                <div class="flex justify-start items-center h-[30%] sm:h-[20%] ">
+                    <h2 class="px-6 text-xl xs:text-3xl sm:text-4xl  text-left">{{$apartment['title']}}</h2>
+                    <!--info-box-->
+                    <div class="absolute bottom-0 left-0 right-0 top-[70%] flex flex-col justify-around items-start p-4 border-r border-b border-l border-secondary-400 bg-white bg-opacity-100 opacity-0 text-fontDark info">
+                        <h2 class="text-xl xs:text-2xl lg:text-3xl  text-fontDark text-start">{{$apartment['title']}}</h2>
                         <a
-                            href=""
-                            class="link-hover text-small xs:text-xl font-light flex justify-start items-center group xs:w-4/5 sm:w-1/2 gap-2"
+                            href="{{$apartment['link']}}"
+                            class="link-hover text-small xs:text-xl font-light flex justify-start items-center group xs:w-4/5 sm:w-1/2 gap-2 pt-4"
                             ><img
                                 src="/assets/decor--dark.png"
                                 alt=""
