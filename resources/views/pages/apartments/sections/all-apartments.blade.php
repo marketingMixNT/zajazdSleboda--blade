@@ -39,7 +39,7 @@
                 <!--LINKS-->
                 <div class="flex flex-col justify-center items-start gap-6 ">
                   
-                    <x-base.link href="{{route('apartament')}}">Zobacz</x-base.link>
+                    <x-base.link href="{{route('apartment')}}">Zobacz</x-base.link>
                     <x-base.link href="#">Zarezerwuj</x-base.link>
     
                 </div>

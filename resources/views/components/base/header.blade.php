@@ -7,9 +7,7 @@
         class="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl tracking-wider uppercase font-heading font-bold heading-animation">
         {{$title}}
     </h1>
-
-    <x-base.secondary-button extraClasses="lg:hidden mt-12" href="#">Rezerwuj</x-base.secondary-button>
-    <!--RESERVATION PANEL-->
-    <div class="be-panel hidden lg:block absolute bottom-24  px-4 bg-bgDark-400"></div>
+    {{$slot}}
+    
 
 </header>
