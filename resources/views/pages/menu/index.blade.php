@@ -1,7 +1,7 @@
 <x-layouts.master>
 
-    @section('title', 'Galeria Zajazd Śleboda')
-    @section('description', 'desc')
+    @section('title', 'Nasze Menu - Podróż po Górskich Smakach | Zajazd Śleboda')
+    @section('description', 'Odkryj w Zajeździe Śleboda menu pełne tatrzańskich smaków. Lokalne składniki i tradycyjne receptury w nowoczesnej odsłonie zapewnią niezapomniane wrażenia.')
 
     <x-base.header title="Menu" bgi='restaurant-hero'>
 
@@ -72,7 +72,7 @@
             <x-base.primary-button href="#szef_kuchni_poleca">Szef Kuchni Poleca</x-base.primary-button>
             <x-base.primary-button href="#sałatki">Sałatki</x-base.primary-button>
             <x-base.primary-button href="#zakąski">Zakąski</x-base.primary-button>
-            <x-base.primary-button ref="#zupy">Zupy</x-base.primary-button>
+            <x-base.primary-button href="#zupy">Zupy</x-base.primary-button>
             <x-base.primary-button href="#zestawy">Zestawy</x-base.primary-button>
             <x-base.primary-button href="#dodatki">Dodatki</x-base.primary-button>
             <x-base.primary-button href="#desery">Desery</x-base.primary-button>
