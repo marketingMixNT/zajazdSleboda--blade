@@ -1,5 +1,8 @@
+animation classes used in observer:
+.text-animation
 
-
-
+.heading-animation
+.text-animation
+.img-animation
 
 .wrapper - insert max-w-screen

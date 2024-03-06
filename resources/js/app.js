@@ -6,6 +6,7 @@ import "./partials/footerYear";
 import "./partials/preloader";
 import "./partials/observer";
 import './partials/filterGallery'
+import './partials/mobileBottomNav'
 
 import Alpine from "alpinejs";
 

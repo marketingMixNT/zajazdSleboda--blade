@@ -8,9 +8,9 @@
         <!--HEADING-->
         <x-base.heading-horizontal
             subheading="Zajazd Śleboda"
-            heading="Zobacz nasze Menu"
-            decor="Lorem ipsum dolor"
-            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quas aspernatur eum voluptates, vero doloribus unde deserunt libero assumenda rem odio ad accusantium aliquid autem ipsa eligendi atque quibusdam perferendis."
+            heading="Menu które zachwyca"
+            decor="Odkryj Nasze Kulinarnie Arcydzieła"
+            text="Nasze menu to starannie skomponowana symfonia lokalnych smaków i nowoczesnej kulinarii. Każde danie opowiada własną historię, zapraszając do odkrywania głębi tradycji i pasji naszych kucharzy. Pozwól sobie na kulinarną podróż, która zadowoli Twoje podniebienie i zostawi niezapomniane wrażenia."
         />
       
         <!--CONTENT-->

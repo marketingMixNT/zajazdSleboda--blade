@@ -26,6 +26,8 @@ h6 {
     @apply font-heading tracking-widest;
 }
 
+
+//not supported
 .h2 {
     @apply text-3xl 2xl:text-5xl font-bold tracking-wide leading-snug;
 }
@@ -37,6 +39,15 @@ h6 {
     @apply font-thin leading-7;
 }
 
+
+.title{
+    &--big{
+        @apply text-3xl 2xl:text-5xl font-bold tracking-wide leading-snug;
+    }
+    &--small{
+        @apply text-3xl 2xl:text-4xl font-bold tracking-wide leading-snug
+    }
+}
 
 
 

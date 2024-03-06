@@ -8,12 +8,12 @@
             <div
                     class="flex items-center justify-center col-span-4 lg:col-span-1"
                 >
-                    <Link>
+                    <a href="/">
                         <img
                             src="{{asset('/assets/logo/logo--light.png')}}"
-                            alt=""
+                            alt="logo Zajazdu Śleboda"
                             class="w-32 lg:ml-16"
-                    /></Link>
+                    /></a>
                 </div>
 <!--TWO-->
 <div
@@ -23,16 +23,16 @@
                         <h2 class="font-heading text-lg uppercase mb-2">
                             Zadzwoń do nas
                         </h2>
-                        <a href="" class="font-thin font-heading link-hover"
-                            >123456789</a
+                        <a href="tel:+48182071252" class="font-thin font-heading link-hover"
+                            >+48 18 20 712 52</a
                         >
                     </div>
                     <div>
                         <h2 class="font-heading text-lg uppercase mb-2">
                             Napisz do nas
                         </h2>
-                        <a href="" class="font-thin font-heading link-hover"
-                            >test@test.pl</a
+                        <a href="mailto:kontakt@zajazdsleboda.pl" class="font-thin font-heading link-hover"
+                            >kontakt@zajazdsleboda.pl</a
                         >
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                     class="mx-4 md:mx-12 flex flex-col justify-center items-center text-center sm:justify-start sm:items-start sm:text-start"
                 >
                     <h2 class="font-heading text-lg uppercase mb-2">Adres</h2>
-                    <a href="" class="font-thin font-heading link-hover"
-                        >Testowa 123<br />34-400 Nowy Targ</a
+                    <a href="https://maps.app.goo.gl/3HfZNtS3cm6ZDiTc8" target="_blank" class="font-thin font-heading link-hover"
+                        >Szlak Papieski 252<br />34-521 Ząb</a
                     >
                 </div>
                                 <!--FOUR-->
@@ -51,17 +51,17 @@
                         Social Media
                     </h2>
                     <div class="flex justify-center sm:justify-start items-center gap-3">
-                        <a href="" target="_blank"
+                        <a href="https://www.facebook.com/zajazdsleboda/?locale=pl_PL" target="_blank"
                             ><img
                                 src="{{asset('/assets/icons/facebook--light.svg')}}"
                                 alt=""
                                 class="w-6 hover:scale-110 duration-300"
                         /></a>
-                        <a href="" target="_blank"
+                        <a href="https://www.tripadvisor.com/Restaurant_Review-g2712643-d14183598-Reviews-Zajazd_Sleboda-Zab_Lesser_Poland_Province_Southern_Poland.html" target="_blank"
                             ><img
-                                src="{{asset('/assets/icons/instagram--light.svg')}}"
+                                src="{{asset('/assets/icons/tripadvisor--light.svg')}}"
                                 alt=""
-                                class="w-6 hover:scale-110 duration-300"
+                                class="w-7 hover:scale-110 duration-300"
                         /></a>
                     </div>
                 </div>
@@ -73,9 +73,9 @@
             <hr class="opacity-40" />
             <ul class="flex justify-center items-center gap-8 text-xs py-4">
                 <li>
-                    <Link class="link-hover">Polityka Prywatności</Link>
+                    <a href="#" class="link-hover">Polityka Prywatności</a>
                 </li>
-                <li><Link class="link-hover"> Regulamin</Link></li>
+                <li><a href="" class="link-hover"> Regulamin</a></li>
             </ul>
             <hr class="opacity-40" />
         </div>

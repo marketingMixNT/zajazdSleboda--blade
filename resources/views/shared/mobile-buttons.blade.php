@@ -1,4 +1,4 @@
-<nav class="bottom-nav_container fixed bottom-0 left-0 right-0  grid lg:hidden grid-cols-4 z-50">
+<nav id="mobile-bottom-nav" class="bottom-nav_container fixed -bottom-16 left-0 right-0  grid lg:hidden grid-cols-4 z-30 transition-all duration-300">
 
     <x-mobile-buttons-item
         href="https://booking.profitroom.com/en/javeadreamapartments/pricelist/rooms/?r1_adults=2&no-cache=&currency=EUR"

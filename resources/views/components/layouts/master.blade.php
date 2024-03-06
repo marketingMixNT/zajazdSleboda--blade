@@ -32,8 +32,8 @@
 <body id="app" class="overflow-x-hidden">
 
     <!--NAVIGATION-->
-    @include('partials.nav.nav-bar')
-    @include('partials.nav.menu')
+    @include('shared.nav.nav-bar')
+    @include('shared.nav.menu')
     <!--PRELOADER-->
     <x-preloader />
 
@@ -41,8 +41,8 @@
     {{ $slot }}
 
     <!--FOOTER-->
-    @include('partials.footer')
-    @include('partials.mobile-buttons')
+    @include('shared.footer')
+    @include('shared.mobile-buttons')
 
     <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

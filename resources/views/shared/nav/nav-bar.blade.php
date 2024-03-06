@@ -5,11 +5,11 @@
         <!--LEFT SIDE-->
         <div class="flex justify-center items-center gap-12 ">
             <div>
-                {{-- <hamburger @click="showModal = !showModal"/> --}}
+                
                 <x-nav.hamburger-btn/>
             </div>
-            <a href="#" class="text-sm mb-1 hidden lg:inline-block duration-300 link-hover"
-                >+48 123 456 789</a
+            <a href="tel:+48182071252" class="text-sm mb-1 hidden lg:inline-block duration-300 link-hover"
+                >+48 18 20 712 52</a
             >
         </div>
         <!--CENTER-->
@@ -24,7 +24,7 @@
         <div class="flex justify-center items-center gap-12 ">
         
             <x-nav.languages-switcher/>
-            <x-base.primary-button class="hidden sm:inline-block"><a href="#" >Rezerwuj</a></x-base.primary-button> 
+            <x-base.primary-button href="#" extraClasses="hidden xs:inline-block">Rezerwuj</x-base.primary-button> 
         </div>
     </div>
 
