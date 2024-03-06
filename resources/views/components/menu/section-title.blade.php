@@ -1,1 +1,1 @@
-<h2 class="h2 font-handwriting py-12 text-center">{{$slot}}</h2>
+<h2 class="text-5xl  font-handwriting py-12 text-center">{{$slot}}</h2>

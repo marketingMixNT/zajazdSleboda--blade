@@ -31,7 +31,7 @@
                         W naszej restauracji w <span class="font-bold">Zajeździe Śleboda</span> każdy posiłek to podróż przez bogactwo górskich smaków i aromatów. Z wielką pasją łączymy tradycyjne receptury z nowoczesną kuchnią, tworząc dania, które zadowolą nawet najbardziej wymagających smakoszy. Nasze menu, inspirowane lokalnymi składnikami, zaprasza do odkrywania autentycznych przysmaków regionu w otoczeniu malowniczych widoków Tatr. 
                     </p>
 
-                    <x-base.link>Sprawdź Menu</x-base.link>
+                    <x-base.link href="{{route('menu')}}">Sprawdź Menu</x-base.link>
                 </div>
                 <img src="{{ asset('/assets/images/dish/dish-1.jpeg') }}" alt=""
                     class="hidden lg:block w-full object-cover" loading="lazy">

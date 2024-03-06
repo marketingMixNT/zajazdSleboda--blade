@@ -1,1 +1,1 @@
-<section {{$attributes}} class=" w-full px-12 lg:px-24">{{$slot}}</section>
+<section {{$attributes}} class=" w-full px-6 sm:px-12 lg:px-24">{{$slot}}</section>
