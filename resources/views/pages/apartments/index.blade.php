@@ -1,10 +1,13 @@
 <x-layouts.master>
 
-    @section('title', 'Apartamenty Zajazd Śleboda')
+    @section('title', 'Wyjątkowe Noclegi w Sercu Tatr | Zajazd Śleboda')
     @section('description',
-        'desc')
+        'Odkryj komfortowe pokoje w Zajeździe Śleboda, gdzie spokój Tatr łączy się z domową atmosferą. Idealne miejsce na wypoczynek i bazę do górskich przygód.')
 
-@include('pages.apartments.sections.header')
+
+
+<x-base.header title="Pokoje" bgi='apartments-hero'/>
+
 @include('pages.apartments.sections.all-apartments')
 
 

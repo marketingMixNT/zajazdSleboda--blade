@@ -19,7 +19,7 @@ class MainController extends Controller
 
         $apartments = [
             [
-                "title" => "Pokój z dwoma łóżkami  King-Size",
+                "title" => "Pokój z dwoma łóżkami King-Size",
                 "img" => "assets/images/apartments/apartment-1.jpg",
                 'link' =>'#'
             ],
@@ -70,11 +70,11 @@ class MainController extends Controller
     }
 
     public function apartments () {
-
+      
 
         $apartments = [
             [
-                "title" => "Apatrament 1",
+                "title" => "Pokój z dwoma łóżkami typu King-Size",
                 "img" => "assets/images/apartments/apartment-1.jpg",
                 "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
                 officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
@@ -86,7 +86,7 @@ class MainController extends Controller
                 'link'=>'#'
             ],
             [
-                "title" => "Apatrament 2",
+                "title" => "Pokój czteroosobowy z balkonem",
                 "img" => "assets/images/apartments/apartment-2.jpeg",
                 "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
                 officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
@@ -98,32 +98,8 @@ class MainController extends Controller
                 'link'=>'#'
             ],
             [
-                "title" => "Apatrament 3",
+                "title" => "Pokój dwuosobowy",
                 "img" => "assets/images/apartments/apartment-3.jpeg",
-                "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
-                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
-                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
-                consequatur ullam?",
-                "surface"=>"50 m2",
-                "persons"=>'max 4 os.',
-                "bed"=>'dwuosobowe',
-                'link'=>'#'
-            ],
-            [
-                "title" => "Apatrament 4",
-                "img" => "assets/images/apartments/apartment-4.jpeg",
-                "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
-                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
-                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
-                consequatur ullam?",
-                "surface"=>"50 m2",
-                "persons"=>'max 4 os.',
-                "bed"=>'dwuosobowe',
-                'link'=>'#'
-            ],
-            [
-                "title" => "Apatrament 5",
-                "img" => "assets/images/apartments/apartment-5.jpeg",
                 "description"=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
                 officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
                 eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
