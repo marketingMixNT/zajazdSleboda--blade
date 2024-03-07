@@ -85,12 +85,13 @@
                 class="max-w-screen-lg mx-4 sm:mx-24 xl:mx-auto text-sm  flex justify-between items-center"
             >
                 <a
-                    href=""
+                    href="/"
                     class="flex gap-2 justify-start items-center link-hover"
                 >
-                    <span >© <span id="footer-year"></span></span>
+                    <span >© <span x-data="{ year: (new Date()).getFullYear() }" x-text="year"></span></span>
                     <span>Śleboda Zajazd</span>
                 </a>
+                
                 <div>
                     <a
                         href="https://marketingmix.pl"

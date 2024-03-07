@@ -29,8 +29,8 @@
 
 </head>
 
-<body id="app" class="overflow-x-hidden">
-
+<body  class="overflow-x-hidden">
+   
     <!--NAVIGATION-->
     @include('shared.nav.nav-bar')
     @include('shared.nav.menu')
@@ -41,6 +41,7 @@
     {{ $slot }}
 
     <!--FOOTER-->
+    
     @include('shared.footer')
     @include('shared.mobile-buttons')
 

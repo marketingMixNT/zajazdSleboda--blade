@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\MainController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\ExportController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +40,7 @@ Route::get('/restauracja',[MainController::class,'restaurant'])->name('restauran
 Route::get('/menu',[MainController::class,'menu'])->name('menu');
 Route::get('/pokój',[MainController::class,'singleApartament'])->name('apartment');
 Route::get('/kontakt',[MainController::class,'contact'])->name('contact');
+
+
+
+// Route::get('/export',[ExportController::class,'export']);
