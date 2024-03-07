@@ -1,82 +1,33 @@
 <x-layouts.master>
 
-    @section('title', 'Galeria Zajazd Śleboda')
-    @section('description', 'desc')
+    @section('title', 'Galeria - tutaj każdy kadr opowiada historię | Zajazd')
+    @section('description', 'Odkryj galerię Zajazdu Śleboda: przeglądaj zdjęcia naszych komfortowych pokoi, eleganckiej restauracji i pysznych dań. Wszystko w malowniczej scenerii Tatr')
 
-    @include('pages.gallery.sections.header')
+    <x-base.header title="Galeria" bgi='restaurant-hero'>
+
+        {{-- add call for food button --}}
+
+    </x-base.header>
 
 
 
 
 
-    {{-- <section id="projects">
-        <div class="container">
-            <!--MENU Links-->
-            <div class="items-links">
-                <div class="item-link menu-active" data-name="all">All</div>
-                <div class="item-link" data-name="1">2</div>
-                <div class="item-link" data-name="2">3</div>
-                <div class="item-link" data-name="3">4</div>
-            </div>
-            <!--FILTER IMAGE -->
-            <div class="gallery">
-                <div class="project-img" data-name="1">
-                    <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                        <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                    </a>
-                </div>
-                <div class="project-img" data-name="2">
-                    <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                        <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                    </a>
-                </div>
-                <div class="project-img" data-name="3">
-                    <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                        <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                    </a>
-                </div>
-                <div class="project-img" data-name="1">
-                    <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                        <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
+   
+<!--GALLERY STYLE in scss/gallery.scss -->
     <section id="projects">
       <div class="container">
+
           <!--MENU Links-->
-          <div class="items-links">
-              <div class="item-link menu-active" data-name="all">All</div>
-              <div class="item-link" data-name="1">2</div>
-              <div class="item-link" data-name="2">3</div>
-              <div class="item-link" data-name="3">4</div>
+          <div class="items-links px-12 py-24 flex justify-center items-center flex-wrap gap-6">
+              <button class="item-link menu-active" data-name="all">Wszytkie</button>
+              <button class="item-link" data-name="1">Pokój dwuusobowy</button>
+              <button class="item-link" data-name="2">Restauracja</button>
+              <button class="item-link" data-name="3">Jedzenie</button>
           </div>
-          <!--FILTER IMAGE -->
-          {{-- <div class="gallery">
-              <div class="project-image" data-name="1">
-                  <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                      <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                  </a>
-              </div>
-              <div class="project-image" data-name="2">
-                  <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                      <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                  </a>
-              </div>
-              <div class="project-image" data-name="3">
-                  <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                      <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                  </a>
-              </div>
-              <div class="project-image" data-name="1">
-                  <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                      <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-                  </a>
-              </div>
-          </div> --}}
+       
           <div class="grid-gallery">
+
             <div class="grid-item" data-name='1'>
                 <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
                     <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
@@ -102,42 +53,84 @@
                     <img src="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" alt="image" />
                 </a>
             </div>
+            <div class="grid-item" data-name='1'>
+                <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='2'>
+                <a href="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='3'>
+                <a href="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='1'>
+                <a href="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='3'>
+                <a href="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='1'>
+                <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='2'>
+                <a href="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='3'>
+                <a href="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='1'>
+                <a href="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='3'>
+                <a href="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='1'>
+                <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='2'>
+                <a href="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='3'>
+                <a href="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='1'>
+                <a href="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" alt="image" />
+                </a>
+            </div>
+            <div class="grid-item" data-name='3'>
+                <a href="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" class="glightbox">
+                    <img src="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" alt="image" />
+                </a>
+            </div>
+
         </div>
       </div>
   </section>
-
-
-    {{-- <div class="grid-gallery">
-        <div class="grid-item">
-            <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
-                <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" class="glightbox">
-                <img src="{{ asset('assets/images/apartments/apartment-2.jpeg') }}" alt="image" />
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" class="glightbox">
-                <img src="{{ asset('assets/images/apartments/apartment-3.jpeg') }}" alt="image" />
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" class="glightbox">
-                <img src="{{ asset('assets/images/apartments/apartment-4.jpeg') }}" alt="image" />
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" class="glightbox">
-                <img src="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" alt="image" />
-            </a>
-        </div>
-    </div> --}}
-
-
-
-
-
 
 </x-layouts.master>
