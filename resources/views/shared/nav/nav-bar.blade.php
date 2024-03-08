@@ -13,7 +13,7 @@
             >
         </div>
         <!--CENTER-->
-        <a href="/" class="absolute left-1/2 transform -translate-x-1/2 ">
+        <a href="{{route('home')}}" class="absolute left-1/2 transform -translate-x-1/2 ">
         <img
             src="/assets/logo/logo--dark.png"
             alt="logo Śleboda Zajazd"
