@@ -469,4 +469,8 @@ Oscypek z grila z żurawiną",
     {
         return view('pages.contact.index');
     }
+
+    public function privacy_policy(){
+        return view('pages.privacy_policy');
+    }
 }
