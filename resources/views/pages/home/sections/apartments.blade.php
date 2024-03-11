@@ -6,7 +6,7 @@
              decor="Idealne miejsce na regenerację ciała i ducha"
              text="W Zajazdzie Śleboda każdy pokój to oaza spokoju i relaksu, zaprojektowana z myślą o Twoim komforcie i zadowoleniu. Nasze pokoje łączą w sobie tradycyjną górską estetykę z nowoczesnymi udogodnieniami, tworząc idealne warunki do odpoczynku po dniu pełnym przygód w Tatrach. Odkryj miejsce, gdzie każdy szczegół został dopracowany, aby zapewnić Ci niezapomniane chwile wypoczynku." />
          <!--CONTENT SWIPER some styles in scss/swiper.scss js in js/partials/swiper.js-->
-         <swiper id="apartament-swiper">
+         {{-- <swiper id="apartament-swiper">
              <!--swiper-container-->
              <swiper-container class="mySwiper apartments-swiper" effect="coverflow" grab-cursor="true"
                  centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
@@ -43,7 +43,11 @@
                      </swiper-slide>
                  @endforeach
              </swiper-container>
+         </swiper> --}}
+         <div id="home_apartaments_swiper">
 
-         </swiper>
-     </div>
- </section>
+            <home-apartaments-swiper :apartments="{{ json_encode($apartments) }}"></home-apartaments-swiper>
+        </div>
+        </div>
+    </section>
+   
