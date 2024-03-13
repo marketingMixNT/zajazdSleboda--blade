@@ -22,7 +22,7 @@
                 <!--CONTENT-->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 py-12 lg:py-24">
                     <!--SWIPER-->
-                    <div class="swiper mySwiper lg:h-auto w-full  lg:w-[90%]  lg:py-24">
+                    <div class="swiper mySwiper lg:h-[60%] w-full  lg:w-[90%]  lg:py-24 ">
 
 
                         <div class="swiper-wrapper">

@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -15,6 +15,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
     Route::get('/menu', [MainController::class, 'menu'])->name('menu');
     Route::get('/pokój', [MainController::class, 'singleApartament'])->name('apartment');
     Route::get('/kontakt', [MainController::class, 'contact'])->name('contact');
+    Route::post('/kontakt', [FormController::class, 'contact_form'])->name('contact_form');
     Route::get('/polityka_prywatnosci', [MainController::class, 'privacy_policy'])->name('privacy_policy');
 });
 

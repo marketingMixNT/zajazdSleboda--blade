@@ -20,7 +20,7 @@
             <div class="sm:grid grid-cols-3 gap-20 2xl:gap-32 pt-24 lg:py-24">
 
                 <div class="flex flex-col justify-between items-start">
-                    <div class="w-full h-[60%] overflow-hidden">
+                    <div class="w-full h-[60%] overflow-hidden image-animation">
                         <div class="w-full h-full object-cover ken-burns">
                             <img src="{{ asset('/assets/images/dish/dish-2.jpeg') }}" alt="" class="w-full h-full object-cover">
                         </div>
@@ -47,10 +47,10 @@
                         <x-base.link href="{{route('menu')}}">Sprawdź Menu</x-base.link>
                     </div>
                     <img src="{{ asset('/assets/images/dish/dish-1.jpeg') }}" alt=""
-                        class="hidden lg:block w-full object-cover" loading="lazy">
+                        class="hidden lg:block w-full object-cover image-animation" loading="lazy">
                 </div>
                 <div class="flex flex-col justify-start">
-                    <div class="h-[80%] w-full overflow-hidden mt-6">
+                    <div class="h-[80%] w-full overflow-hidden mt-6 image-animation">
                         <div class="h-full w-full object-cover ken-burns">
                             <img src="{{ asset('/assets/images/dish/dish-3.jpeg') }}" alt="" class="h-full w-full object-cover" loading="lazy">
                         </div>
