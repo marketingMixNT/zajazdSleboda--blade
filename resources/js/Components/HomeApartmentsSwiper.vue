@@ -64,7 +64,7 @@ const props = defineProps({
     apartments:Array
 })
 
-console.log(props.apartments);
+
   // import required modules
   import { EffectCoverflow, Pagination,Autoplay } from 'swiper/modules';
   
