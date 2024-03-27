@@ -8,11 +8,6 @@ import './partials/filterGallery'
 import './partials/mobileBottomNav'
 import './partials/gLightbox'
 
-
-
-
-
-
 import Alpine from "alpinejs";
 
 window.Alpine = Alpine;

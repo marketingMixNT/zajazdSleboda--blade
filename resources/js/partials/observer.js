@@ -1,21 +1,3 @@
-// const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-           
-//             entry.target.classList.add('tracking-in-expand');
-//             entry.target.classList.add('text-focus-in');
-//         }
-//     });
-// }, { threshold: 0.1 });
-
-
-// document.querySelectorAll('.heading-animation').forEach(element => {
-//     observer.observe(element);
-// });
-// document.querySelectorAll('.text-animation').forEach(element => {
-//     observer.observe(element);
-// });
-
 
 const handleIntersection = (entries, observer, animationClass) => {
     entries.forEach((entry) => {
@@ -42,12 +24,14 @@ const createIntersectionObserver = (animationClass) => {
 const headingAnimation = document.querySelectorAll('.heading-animation')
 const textAnimation = document.querySelectorAll('.text-animation')
 const imageAnimation = document.querySelectorAll('.image-animation')
+const decorTextAnimation = document.querySelectorAll('.decorText-animation')
 
 
 if (window.innerWidth > 768) {
     const observerHeading = createIntersectionObserver("tracking-in-expand");
     const observerText = createIntersectionObserver("text-focus-in");
     const observerImage = createIntersectionObserver("tilt-in-bottom-1");
+    const observerDecorText = createIntersectionObserver("slide-in-blurred-left");
    
 
     headingAnimation.forEach((element) => {
@@ -59,6 +43,9 @@ if (window.innerWidth > 768) {
     });
     imageAnimation.forEach((element) => {
         observerImage.observe(element);
+    });
+    decorTextAnimation.forEach((element) => {
+        observerDecorText.observe(element);
     });
    
 }
