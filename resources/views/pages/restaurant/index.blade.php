@@ -80,8 +80,11 @@
 
         <section class="lg:mt-60">
 
-            <div class="2xl:py-72   w-full relative">
-                <swiper-container class="restaurant-swiper 2xl:absolute 2xl:bottom-0  2xl:right-[0px] w-full 2xl:w-[80%]"
+            <div id="restaurant_dish_slider" class="2xl:py-72 w-full relative">
+
+                <restaurant-dish-slider :menu="{{ json_encode($menu) }}"></restaurant-dish-slider>
+
+                {{-- <swiper-container class="restaurant-swiper 2xl:absolute 2xl:bottom-0  2xl:right-[0px] w-full 2xl:w-[80%]"
                     space-between="70" autoplay-delay="5000" autoplay-disable-on-interaction="true" grab-cursor="true"
                     loop="true">
 
@@ -98,7 +101,7 @@
 
 
 
-                </swiper-container>
+                </swiper-container> --}}
             </div>
 
         </section>

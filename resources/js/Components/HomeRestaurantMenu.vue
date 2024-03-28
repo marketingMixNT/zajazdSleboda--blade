@@ -14,7 +14,7 @@
                 slidesPerView: 2,
                 spaceBetween: 70,
             },
-            '1850': {
+            '1024': {
                 slidesPerView: 3,
                 spaceBetween: 70,
             },
@@ -89,6 +89,6 @@ export default {
 }
 
 .swiper-slide {
-    @apply w-[300px] h-[300px] xs:w-[460px] xs:h-[460px] sm:w-[490px] sm:h-[490px]  overflow-hidden;
+    @apply first-of-type:ml-2 w-[300px] h-[300px] xs:w-[460px] xs:h-[460px] sm:w-[490px] sm:h-[490px]  overflow-hidden;
 }
 </style>
