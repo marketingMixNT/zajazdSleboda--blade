@@ -23,18 +23,11 @@
 
 
     <!-- Scripts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" /> --}}
-
-
-    {{-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcKTacpAAAAAIIXaj_C_WJKkpJEusdJlJQobXYk"></script> --}}
-    {{-- <script src="https://www.google.com/recaptcha/api.js"></script> --}}
-
     {!! htmlScriptTagJsApi() !!}
+    @cookieconsentscripts
 
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
-    @cookieconsentscripts
 </head>
 
 <body class="overflow-x-hidden">
@@ -54,14 +47,10 @@
     @include('shared.mobile-buttons')
 
     <!--SCRIPTS-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-    <script src="https://wis.upperbooking.com/owcedwie/be-panel?locale=pl" async></script>
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-
-
     @cookieconsentview
+    <script src="https://wis.upperbooking.com/owcedwie/be-panel?locale=pl" async></script>
+
+
 </body>
 
 </html>
