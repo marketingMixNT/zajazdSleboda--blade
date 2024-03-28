@@ -54,13 +54,13 @@
                         <a href="https://www.facebook.com/zajazdsleboda/?locale=pl_PL" target="_blank"
                             ><img
                                 src="{{asset('/assets/icons/facebook--light.svg')}}"
-                                alt=""
+                                alt="facebook Zajazd Śleboda"
                                 class="w-6 hover:scale-110 duration-300"
                         /></a>
                         <a href="https://www.tripadvisor.com/Restaurant_Review-g2712643-d14183598-Reviews-Zajazd_Sleboda-Zab_Lesser_Poland_Province_Southern_Poland.html" target="_blank"
                             ><img
                                 src="{{asset('/assets/icons/tripadvisor--light.svg')}}"
-                                alt=""
+                                alt="TripAdvisor Zajazd Śleboda"
                                 class="w-7 hover:scale-110 duration-300"
                         /></a>
                     </div>
@@ -100,6 +100,7 @@
                         ><img
                             src="{{asset('/assets/marketingmix.svg')}}"
                             class="w-40 hover:scale-110 duration-300"
+                            alt="logo wykonawcy - agencja MarketingMix"
                     /></a>
                 </div>
             </div>
@@ -107,10 +108,4 @@
     </footer>
 
 
-{{-- <script setup>
-const today = new Date();
 
-const year = today.getFullYear();
-
-console.log(year);
-</script> --}}

@@ -4,18 +4,15 @@
     <!--HEADING-->
     <span
         class="mb-4 font-text text-sm 2xl:text-base font-semibold tracking-widest uppercase heading-animation ">{{ __('home.header.subtitle') }}</span>
-    {{-- <span
-        class="mb-4 font-text text-sm 2xl:text-base font-semibold tracking-widest uppercase heading-animation ">Elegancja
-        i Spokój pośród Tatrzanskich Szczytów</span> --}}
     <h1
         class="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl tracking-wider uppercase font-heading font-bold heading-animation">
         Zajazd Śleboda
     </h1>
 
-    <x-base.secondary-button extraClasses="lg:hidden mt-12"><a href="#">Rezerwuj</a></x-base.secondary-button>
+    <x-base.button type='secondary' class="lg:hidden mt-12" href="#" aria-label="#">Rezerwuj</x-base.button>
     <!--RESERVATION PANEL-->
     <div class="be-panel hidden lg:block absolute bottom-24  px-4 bg-bgDark-400"></div>
 
-    <a href="#about" class="absolute bottom-5 left-5 flex text-sm font-heading uppercase">zobacz więcej
+    <a href="#o-nas" class="absolute bottom-5 left-5 flex text-sm font-heading uppercase">zobacz więcej
         <img src="/assets/icons/arrow-down.svg" alt="" class="w-5 animate-bounce" /></a>
 </header>

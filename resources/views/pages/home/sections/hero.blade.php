@@ -14,7 +14,8 @@
 
 
     
-    <x-base.secondary-button extraClasses="mt-16 px-20 lg:text-xl" href="#" target="_blank">Zarezerwuj</x-base.secondary-button> 
+   
+    <x-base.button type='"secondary' class="mt-16 px-20 lg:text-xl" href="#" target="_blank" aria-label="Zarezerwuj" >Zarezerwuj</x-base.button>
     </div>
     
     </section>

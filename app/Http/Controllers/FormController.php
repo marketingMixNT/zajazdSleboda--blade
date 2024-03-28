@@ -11,9 +11,6 @@ class FormController extends Controller
     public function contact_form(ContactFormRequest $request)
     {
 
-        
-
-
         Mail::send(
             'mails.contactMail',
             [

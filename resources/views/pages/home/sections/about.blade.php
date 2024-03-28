@@ -1,5 +1,5 @@
     <!--CONTAINER-->
-    <section id="about"
+    <section id="o-nas"
     >
     <div class="wrapper max-w-screen-2xl">
         <!--HEADING-->
@@ -16,7 +16,8 @@
                     <div class="swiper-wrapper" >
                         
                         @foreach ($images as $img)
-                        <div class="swiper-slide"><img src="{{asset($img)}}"  class="w-full h-full object-cover"></div>
+                        <div class="swiper-slide"><img src="{{asset($img)}}" alt="wnętrze restauracji oraz apartmenty w Zajazd Śleboda"  class="w-full h-full object-cover" loading="lazy" width="640" 
+                            height="960"></div>
                         @endforeach
                     </div>
                   </div>
@@ -41,6 +42,11 @@
                     <img
                         src="/assets/images/header--small.jpeg"
                         class="ken-burns w-full h-full object-cover "
+                        alt="wnętrze restauracji Zajazd Śleboda"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+
                     />
                 </div>
             </div>

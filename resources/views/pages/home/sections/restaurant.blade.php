@@ -1,5 +1,5 @@
 <!--CONTAINER-->
-<section id="about" class="section">
+<section class="section">
     <div class="wrapper max-w-screen-2xl">
         <!--HEADING-->
         <x-base.heading subheading="Zajazd Śleboda" heading="Szlakiem Górskich Smaków" decor="Podróż kulinarna, która pozostaje w pamięci" />
@@ -9,7 +9,7 @@
             <div class="flex flex-col justify-between items-start">
                 <div class="w-full h-[60%] overflow-hidden image-animation">
                     <div class="w-full h-full object-cover ken-burns ">
-                        <img src="{{ asset('/assets/images/dish/dish-2.jpeg') }}" alt="" class="w-full h-full object-cover">
+                        <img src="{{ asset('/assets/images/dish/dish-2.jpeg') }}" alt="danie w restauracji Zajazd Śleboda" class="w-full h-full object-cover" loading="lazy" width="420" height="480">
                     </div>
                 </div>
 
@@ -33,13 +33,13 @@
 
                     <x-base.link href="{{route('menu')}}">Sprawdź Menu</x-base.link>
                 </div>
-                <img src="{{ asset('/assets/images/dish/dish-1.jpeg') }}" alt=""
-                    class="hidden lg:block w-full object-cover image-animation" loading="lazy">
+                <img src="{{ asset('/assets/images/dish/dish-1.jpeg') }}" alt="danie w restauracji Zajazd Śleboda"
+                    class="hidden lg:block w-full object-cover image-animation" loading="lazy" width="430" height="320">
             </div>
             <div class="flex flex-col justify-start">
                 <div class="h-[80%] w-full overflow-hidden mt-6 image-animation">
                     <div class="h-full w-full object-cover ken-burns">
-                        <img src="{{ asset('/assets/images/dish/dish-3.jpeg') }}" alt="" class="h-full w-full object-cover" loading="lazy">
+                        <img src="{{ asset('/assets/images/dish/dish-3.jpeg') }}" alt="danie w restauracji Zajazd Śleboda" class="h-full w-full object-cover" loading="lazy" width="766" height="957">
                     </div>
                 </div>
             </div>

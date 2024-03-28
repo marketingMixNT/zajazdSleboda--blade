@@ -40,27 +40,33 @@ class MainController extends Controller
         $menu = [
             [
                 "title" => "Szef Kuchni poleca",
-                "img" => "assets/images/menu/chef.jpeg"
+                "img" => "assets/images/menu/chef.jpeg",
+                "link"=>"/menu#szef_kuchni_poleca"
             ],
             [
                 "title" => "Sałatki",
-                "img" => "assets/images/menu/salad.jpeg"
+                "img" => "assets/images/menu/salad.jpeg",
+                "link"=>"/menu#sałatki"
             ],
             [
                 "title" => "Zupy",
-                "img" => "assets/images/menu/soup.jpeg"
+                "img" => "assets/images/menu/soup.jpeg",
+                "link"=>"/menu#zupy"
             ],
             [
                 "title" => "Zestawy",
-                "img" => "assets/images/menu/set.jpeg"
+                "img" => "assets/images/menu/set.jpeg",
+                "link"=>"/menu#zestawy"
             ],
             [
                 "title" => "Pizza",
-                "img" => "assets/images/menu/pizza.jpeg"
+                "img" => "assets/images/menu/pizza.jpeg",
+                "link"=>"/menu#pizza"
             ],
             [
                 "title" => "Napoje",
-                "img" => "assets/images/menu/drink.jpeg"
+                "img" => "assets/images/menu/drink.jpeg",
+                "link"=>"/menu#napoje"
             ],
         ];
 

@@ -20,27 +20,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-const swiperEl = document.querySelector('.menu-swiper')
-if(swiperEl){
-  Object.assign(swiperEl, {
-    slidesPerView: 1,
-    spaceBetween: 10,
-   
-    breakpoints: {
-   
-  
-      800: {
-        slidesPerView: 2,
-        spaceBetween: 70,
-      },
-      1850: {
-        slidesPerView: 3,
-        spaceBetween: 70,
-      },
-    },
-  });
-  swiperEl.initialize();
-}
+
 
 const swiperRestaurant = document.querySelector('.restaurant-swiper')
 if(swiperRestaurant){
