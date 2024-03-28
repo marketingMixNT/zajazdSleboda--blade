@@ -11,28 +11,34 @@
     <title>@yield('title', 'Zajaz Śleboda')</title>
     <meta name="description" content='@yield('description')'>
 
-      <!--Cannonical-->
-      <link rel="canonical" href="{{ url()->current() }}" />
-      <!--Favicons-->
-      @include('partials.favicon')
-      <!--Facebook Meta-->
-      @include('partials.facebook-meta')
-      <!--Fonts-->
-      @include('partials.fonts')
+    <!--Cannonical-->
+    <link rel="canonical" href="{{ url()->current() }}" />
+    <!--Favicons-->
+    @include('partials.favicon')
+    <!--Facebook Meta-->
+    @include('partials.facebook-meta')
+    <!--Fonts-->
+    @include('partials.fonts')
 
-   
+
 
     <!-- Scripts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-   
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" /> --}}
+
+
+    {{-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcKTacpAAAAAIIXaj_C_WJKkpJEusdJlJQobXYk"></script> --}}
+    {{-- <script src="https://www.google.com/recaptcha/api.js"></script> --}}
+
+    {!! htmlScriptTagJsApi() !!}
+
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
     @cookieconsentscripts
 </head>
 
-<body  class="overflow-x-hidden">
-   
+<body class="overflow-x-hidden">
+
     <!--NAVIGATION-->
     @include('shared.nav.nav-bar')
     @include('shared.nav.menu')
@@ -43,7 +49,7 @@
     {{ $slot }}
 
     <!--FOOTER-->
-    
+
     @include('shared.footer')
     @include('shared.mobile-buttons')
 
@@ -54,8 +60,8 @@
     <script src="https://wis.upperbooking.com/owcedwie/be-panel?locale=pl" async></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
-    
-        @cookieconsentview
+
+    @cookieconsentview
 </body>
 
 </html>

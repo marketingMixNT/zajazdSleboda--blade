@@ -58,11 +58,11 @@
                         </div>
                     </div>
                     <!--FORM-->
-                    
 
 
 
-                        @if (isset($formSubmitted))
+
+                    @if (isset($formSubmitted))
                         <div class="flex justify-center items-center">
                             <div class=" flex flex-col gap-4 text-center my-6">
 
@@ -70,10 +70,10 @@
                                 <span class="text-xl font-bold">Odpowiemy najszybciej jak to możliwe!</span>
                             </div>
                         </div>
-                        @else
+                    @else
                         <div>
 
-                        
+
                             <form method="post" action="{{ route('contact_form') }}" id="contactForm"
                                 class="max-w-md mx-auto flex flex-col justify-start items-start">
                                 @csrf
@@ -91,11 +91,25 @@
 
 
 
-                                <x-base.submit-button extraClasses='mt-6'>Wyślij</x-base.submit-button>
+                                {{-- <x-base.submit-button 
+                                data-sitekey="6LcKTacpAAAAAIIXaj_C_WJKkpJEusdJlJQobXYk"
+                                data-callback='onSubmit'
+                                data-action='submit'    extraClasses='mt-6'>
+                                Wyślij</x-base.submit-button> --}}
+
+                                {!! htmlFormSnippet() !!}
+                                @if ($errors->has('g-recaptcha-response'))
+                                    <p class="text-red-600 text-xs mt-4">Wpisz ReCaptcha</p>
+                                @endif
+
+
+                                <x-base.submit-button extraClasses='mt-6'>
+                                    Wyślij</x-base.submit-button>
 
                             </form>
+
                         </div>
-                        @endif
+                    @endif
         </section>
 
 

@@ -2,20 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactFormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class FormController extends Controller
 {
-    public function contact_form(Request $request)
+    public function contact_form(ContactFormRequest $request)
     {
 
-        $request->validate([
-            'name' => 'required|max:100',
-            'email' => 'required|email|max:100',
-            'tel' => 'max:15', 
-            'content' => 'required',
-        ]);
+        
 
 
         Mail::send(
@@ -29,8 +25,8 @@ class FormController extends Controller
 
             
             function ($message) {
-                $message->from(env('MAIL_USERNAME'));
-                $message->to(env('MAIL_USERNAME'))->cc('marek.gacek@marketingmix.pl')
+                $message->from("contactForm@mmhub.pl");
+                $message->to("contactForm@mmhub.pl")->cc('marek.gacek@marketingmix.pl')
                     // $message->to(env('MAIL_USERNAME'))->cc(env('SECONDARY_EMAIL'))
                     ->subject('Nowa wiadomość ze strony zajazdsleboda.pl');
             }
