@@ -24,7 +24,7 @@
         <div class="flex justify-center items-center gap-12 ">
         
             <x-nav.languages-switcher/>
-            <x-base.primary-button href="#" extraClasses="hidden xs:inline-block">Rezerwuj</x-base.primary-button> 
+            <x-base.button href="#" class="hidden xs:inline-block" aria-label="Rezerwuj">Rezerwuj</x-base.button> 
         </div>
     </div>
 

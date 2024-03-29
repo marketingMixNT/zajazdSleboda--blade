@@ -41,32 +41,32 @@ class MainController extends Controller
             [
                 "title" => "Szef Kuchni poleca",
                 "img" => "assets/images/menu/chef.jpeg",
-                "link"=>"/menu#szef_kuchni_poleca"
+                "link" => "/menu#szef_kuchni_poleca"
             ],
             [
                 "title" => "Sałatki",
                 "img" => "assets/images/menu/salad.jpeg",
-                "link"=>"/menu#sałatki"
+                "link" => "/menu#sałatki"
             ],
             [
                 "title" => "Zupy",
                 "img" => "assets/images/menu/soup.jpeg",
-                "link"=>"/menu#zupy"
+                "link" => "/menu#zupy"
             ],
             [
                 "title" => "Zestawy",
                 "img" => "assets/images/menu/set.jpeg",
-                "link"=>"/menu#zestawy"
+                "link" => "/menu#zestawy"
             ],
             [
                 "title" => "Pizza",
                 "img" => "assets/images/menu/pizza.jpeg",
-                "link"=>"/menu#pizza"
+                "link" => "/menu#pizza"
             ],
             [
                 "title" => "Napoje",
                 "img" => "assets/images/menu/drink.jpeg",
-                "link"=>"/menu#napoje"
+                "link" => "/menu#napoje"
             ],
         ];
 
@@ -430,18 +430,20 @@ Oscypek z grila z żurawiną",
         ];
 
 
-        return view('pages.menu.index', ['chefChoice' => $chefChoice, 'salad' => $salad, 'appetizers' => $appetizers, 'soups' => $soups, 'chickenSets' => $chickenSets, 'meatSets' => $meatSets, 'otherSets' => $otherSets, 'additives' => $additives,'desserts'=>$desserts]);
+        return view('pages.menu.index', ['chefChoice' => $chefChoice, 'salad' => $salad, 'appetizers' => $appetizers, 'soups' => $soups, 'chickenSets' => $chickenSets, 'meatSets' => $meatSets, 'otherSets' => $otherSets, 'additives' => $additives, 'desserts' => $desserts]);
     }
     public function singleApartament()
     {
 
 
         $images = [
-            '/assets/images/apartments/apartment-1.jpg',
-            '/assets/images/apartments/apartment-2.jpeg',
-            '/assets/images/apartments/apartment-3.jpeg',
-            '/assets/images/apartments/apartment-4.jpeg',
-            '/assets/images/apartments/apartment-5.jpeg',
+            ['img' => 'assets/images/apartments/apartment-1.jpg'],
+            ['img' => 'assets/images/apartments/apartment-2.jpeg'],
+            ['img' => 'assets/images/apartments/apartment-3.jpeg'],
+            ['img' => 'assets/images/apartments/apartment-4.jpeg'],
+            ['img' => 'assets/images/apartments/apartment-5.jpeg'],
+
+
         ];
 
         $apartments = [
@@ -476,7 +478,8 @@ Oscypek z grila z żurawiną",
         return view('pages.contact.index');
     }
 
-    public function privacy_policy(){
+    public function privacy_policy()
+    {
         return view('pages.privacy_policy');
     }
 }

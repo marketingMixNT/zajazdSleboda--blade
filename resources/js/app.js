@@ -16,23 +16,26 @@ Alpine.start();
 
 import { createApp } from "vue";
 
-import ContactSwiper from './Components/ContactSwiper.vue';
-import HomeApartmentsSwiper from './Components/HomeApartmentsSwiper.vue'
-import HomeRestaurantMenu from './Components/HomeRestaurantMenu.vue'
-import RestaurantDishSlider from './Components/RestaurantDishSlider.vue'
-import FadeSwiper from './Components/FadeSwiper.vue'
+import ContactSwiper from './components/ContactSwiper.vue';
+import HomeApartmentsSwiper from './components/HomeApartmentsSwiper.vue'
+import HomeRestaurantMenu from './components/HomeRestaurantMenu.vue'
+import RestaurantDishSlider from './components/RestaurantDishSlider.vue'
+import FadeSwiper from './components/FadeSwiper.vue'
+import OtherRooms from './components/OtherRooms.vue'
 
 const contactSwiperApp = createApp({});
 const homeApartamentsSwiperApp = createApp({});
 const homeRestaurantMenuApp = createApp({})
 const restaurantDishSliderApp = createApp({})
 const fadeSwiperApp = createApp({})
+const otherRoomsApp = createApp({})
 
 contactSwiperApp.component("contact-swiper", ContactSwiper);
 homeApartamentsSwiperApp.component("home-apartaments-swiper", HomeApartmentsSwiper);
 homeRestaurantMenuApp.component("home-restaurant-menu",HomeRestaurantMenu)
 restaurantDishSliderApp.component("restaurant-dish-slider",RestaurantDishSlider)
 fadeSwiperApp.component('fade-swiper',FadeSwiper)
+otherRoomsApp.component('other-rooms',OtherRooms)
 
 window.addEventListener("DOMContentLoaded", (event) => {
     const contactSwiperElement = document.querySelector("#contact_swiper");
@@ -40,6 +43,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const homeRestaurantMenuElement = document.querySelector("#home_restaurant_menu")
     const restaurantDishSliderElement = document.querySelector('#restaurant_dish_slider')
     const fadeSwiperElement = document.querySelector('#fade_swiper')
+    const otherRoomsElement = document.querySelector('#other_rooms')
 
     if(contactSwiperElement) {
         const mountedContactSwiperApp = contactSwiperApp.mount(contactSwiperElement);
@@ -56,5 +60,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
     if(fadeSwiperElement){
         const mountedFadeSwiperElement = fadeSwiperApp.mount(fadeSwiperElement)
+    }
+    if(otherRoomsElement){
+        otherRoomsApp.mount(otherRoomsElement)
     }
 });
