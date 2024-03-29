@@ -16,7 +16,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
     Route::get('/pokój', [MainController::class, 'singleApartament'])->name('apartment');
     Route::get('/kontakt', [MainController::class, 'contact'])->name('contact');
     Route::post('/kontakt', [FormController::class, 'contact_form'])->name('contact_form');
-    Route::get('/polityka_prywatnosci', [MainController::class, 'privacy_policy'])->name('privacy_policy');
+    Route::get('/polityka-prywatnosci', [MainController::class, 'privacy_policy'])->name('privacy_policy');
 });
 
 
