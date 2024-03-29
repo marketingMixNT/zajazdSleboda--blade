@@ -22,7 +22,7 @@
                 <div class="flex flex-col justify-between items-start">
                     <div class="w-full h-[60%] overflow-hidden image-animation">
                         <div class="w-full h-full object-cover ken-burns">
-                            <img src="{{ asset('/assets/images/dish/dish-2.jpeg') }}" alt="" class="w-full h-full object-cover">
+                            <img src="{{ asset('/assets/images/dish/dish-2.jpeg') }}" alt="danie w restauracji Zajzd Śleboda" width="430" height="470" class="w-full h-full object-cover">
                         </div>
                     </div>
     
@@ -46,13 +46,13 @@
     
                         <x-base.link href="{{route('menu')}}">Sprawdź Menu</x-base.link>
                     </div>
-                    <img src="{{ asset('/assets/images/dish/dish-1.jpeg') }}" alt=""
+                    <img src="{{ asset('/assets/images/dish/dish-1.jpeg') }}" alt="danie w restauracji Zajazd Śleboda" width="430" height="320"
                         class="hidden lg:block w-full object-cover image-animation" loading="lazy">
                 </div>
                 <div class="flex flex-col justify-start">
                     <div class="h-[80%] w-full overflow-hidden mt-6 image-animation">
                         <div class="h-full w-full object-cover ken-burns">
-                            <img src="{{ asset('/assets/images/dish/dish-3.jpeg') }}" alt="" class="h-full w-full object-cover" loading="lazy">
+                            <img src="{{ asset('/assets/images/dish/dish-3.jpeg') }}" alt="danie w restauracji Zajazd Śleboda" class="h-full w-full object-cover" loading="lazy" width="430" height="630">
                         </div>
                     </div>
                 </div>
@@ -69,15 +69,15 @@
     <section id='nasze_menu' class=" mx-auto  max-w-screen-lg">
 
         <div class="flex flex-wrap justify-center items-center gap-4 sm:mx-12  mb-12">
-            <x-base.primary-button href="#szef_kuchni_poleca">Szef Kuchni Poleca</x-base.primary-button>
-            <x-base.primary-button href="#sałatki">Sałatki</x-base.primary-button>
-            <x-base.primary-button href="#zakąski">Zakąski</x-base.primary-button>
-            <x-base.primary-button href="#zupy">Zupy</x-base.primary-button>
-            <x-base.primary-button href="#zestawy">Zestawy</x-base.primary-button>
-            <x-base.primary-button href="#dodatki">Dodatki</x-base.primary-button>
-            <x-base.primary-button href="#desery">Desery</x-base.primary-button>
-            <x-base.primary-button href="#pizaa">Pizza</x-base.primary-button>
-            <x-base.primary-button href="#napoje">Napoje</x-base.primary-button>
+            <x-base.button href="#szef_kuchni_poleca" aria-label='Szef Kuchni Poleca'>Szef Kuchni Poleca</x-base.button>
+            <x-base.button href="#sałatki" aria-label="Sałatki">Sałatki</x-base.button>
+            <x-base.button href="#zakąski" aria-label='Zakąski'>Zakąski</x-base.button>
+            <x-base.button href="#zupy" aria-label="Zupy">Zupy</x-base.button>
+            <x-base.button href="#zestawy" aria-label="Zestawy">Zestawy</x-base.button>
+            <x-base.button href="#dodatki" aria-label="Dodatki">Dodatki</x-base.button>
+            <x-base.button href="#desery" aria-label="desery">Desery</x-base.button>
+            <x-base.button href="#pizaa" aria-label="pizza">Pizza</x-base.button>
+            <x-base.button href="#napoje" aria-label="napoje">Napoje</x-base.button>
         </div>
 
         <!--MENU CONTAINER-->

@@ -22,16 +22,8 @@
                 <!--CONTENT-->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 py-12 lg:py-24">
                     <!--SWIPER-->
-                    <div class="swiper mySwiper lg:h-[60%] w-full  lg:w-[90%]  lg:py-24 ">
-
-
-                        <div class="swiper-wrapper">
-
-                            @foreach ($images as $img)
-                                <div class="swiper-slide"><img src="{{ asset($img) }}"
-                                        class="w-full h-[450px] lg:h-full object-cover"></div>
-                            @endforeach
-                        </div>
+                    <div id="fade_swiper">
+                        <fade-swiper :images="{{ json_encode($images) }}">
                     </div>
                     <!--TEXT-->
                     <div class="flex flex-col justify-start items-start gap-12">
@@ -47,7 +39,7 @@
 
                         <!--IMG-->
                         <div class="overflow-hidden mt-6 lg:mt-12 w-full md:w-[100%] lg:w-auto mx-auto ">
-                            <img src="/assets/images/header--small.jpeg" class="ken-burns w-full h-full object-cover" />
+                            <img src="/assets/images/header--small.jpeg" alt="wnętrze restauracji w Zajazd Śleboda" width="645" height="430" class="ken-burns w-full h-full object-cover" />
                         </div>
 
                         <div class="flex flex-col justify-start items-start gap-12">
@@ -84,24 +76,7 @@
 
                 <restaurant-dish-slider :menu="{{ json_encode($menu) }}"></restaurant-dish-slider>
 
-                {{-- <swiper-container class="restaurant-swiper 2xl:absolute 2xl:bottom-0  2xl:right-[0px] w-full 2xl:w-[80%]"
-                    space-between="70" autoplay-delay="5000" autoplay-disable-on-interaction="true" grab-cursor="true"
-                    loop="true">
 
-                    @foreach ($menu as $item)
-                        <swiper-slide
-                            class="w-[300px] h-[300px] xs:w-[460px] xs:h-[460px] sm:w-[1000px] sm:h-[800px]  group overflow-hidden">
-                            <div class="border border-black w-full h-full relative">
-                                <img src="{{ asset($item['img']) }}" alt="" class="w-full h-full object-cover">
-
-
-                            </div>
-                        </swiper-slide>
-                    @endforeach
-
-
-
-                </swiper-container> --}}
             </div>
 
         </section>
@@ -111,7 +86,7 @@
 
             <div class="flex flex-col px-12 lg:px-24">
 
-                <img src="{{ asset('assets/images/restaurant/hero--big.jpeg') }}" alt=""
+                <img src="{{ asset('assets/images/restaurant/hero--big.jpeg') }}" alt="danie serwowane w restauracji Zajazd Śleboda" width="1080" height="580"
                     class="w-full h-[300px] sm:h-[600px] object-cover px-1">
 
                 <div class="flex flex-col lg:flex-row ">

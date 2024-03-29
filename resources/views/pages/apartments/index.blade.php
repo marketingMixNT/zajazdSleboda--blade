@@ -8,7 +8,7 @@
 
         <x-base.header title="Pokoje" bgi='apartments-hero'>
 
-            <x-base.secondary-button extraClasses="lg:hidden mt-12" href="#">Rezerwuj</x-base.secondary-button>
+            <x-base.button type="secondary" class="lg:hidden mt-12" href="#" aria-label="Rezerwuj">Rezerewuj</x-base.button>
             <!--RESERVATION PANEL-->
             <div class="be-panel hidden lg:block absolute bottom-24  px-4 bg-bgDark-400"></div>
 
