@@ -1,11 +1,55 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Services\ApartmentService;
 
-use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
+
+//MAKE ONE ARRAY WITH APARTMENT COMPATIBILE WITH ALL COMPONENTS change image to img etc...
+//THE SAME FOR MENU
+//FOR MENU LIST MAKE NEW CLASS
+// class MenuService
+// {
+//     public function getDesserts()
+//     {
+//         return [
+//             [
+//                 "title" => "Puchar lodowy",
+//                 "ingredients" => "3 gałki lodów, bita śmietana, owoce, polewa",
+//                 "price" => "20",
+//             ],
+//             [
+//                 "title" => "Szarlotka z bitą śmietaną",
+//                 "ingredients" => "",
+//                 "price" => "15",
+//             ],
+//             [
+//                 "title" => "Szarlotka na ciepło z gałką lodów",
+//                 "ingredients" => "",
+//                 "price" => "18",
+//             ],
+//         ];
+//     }
+// }
+
+
+
+
+    protected $apartments;
+
+    public function __construct()
+    {
+        $apartmentService = new ApartmentService();
+        $this->apartments = $apartmentService->getApartments();
+    }
+
+   
+
+
+
+
     public function home()
     {
 
@@ -17,23 +61,23 @@ class MainController extends Controller
             '/assets/images/about-slider/slider--5.jpeg',
         ];
 
-        $apartments = [
-            [
-                "title" => "Pokój z dwoma łóżkami King-Size",
-                "img" => "assets/images/apartments/apartment-1.jpg",
-                'link' => '#'
-            ],
-            [
-                "title" => "Pokój czteroosobowy z balkonem",
-                "img" => "assets/images/apartments/apartment-2.jpeg",
-                'link' => '#'
-            ],
-            [
-                "title" => "Pokój dwuosobowy",
-                "img" => "assets/images/apartments/apartment-3.jpeg",
-                'link' => '#'
-            ],
-        ];
+        // $apartments = [
+        //     [
+        //         "title" => "Pokój z dwoma łóżkami King-Size",
+        //         "img" => "assets/images/apartments/apartment-1.jpg",
+        //         'link' => '#'
+        //     ],
+        //     [
+        //         "title" => "Pokój czteroosobowy z balkonem",
+        //         "img" => "assets/images/apartments/apartment-2.jpeg",
+        //         'link' => '#'
+        //     ],
+        //     [
+        //         "title" => "Pokój dwuosobowy",
+        //         "img" => "assets/images/apartments/apartment-3.jpeg",
+        //         'link' => '#'
+        //     ],
+        // ];
 
 
 
@@ -72,54 +116,54 @@ class MainController extends Controller
 
 
 
-        return view('pages.home.index', ['images' => $images, 'apartments' => $apartments, 'menu' => $menu]);
+        return view('pages.home.index', ['images' => $images, 'apartments' => $this->apartments, 'menu' => $menu]);
     }
 
     public function apartments()
     {
 
 
-        $apartments = [
-            [
-                "title" => "Pokój z dwoma łóżkami typu King-Size",
-                "img" => "assets/images/apartments/apartment-1.jpg",
-                "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
-                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
-                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
-                consequatur ullam?",
-                "surface" => "50 m2",
-                "persons" => 'max 4 os.',
-                "bed" => 'dwuosobowe',
-                'link' => '#'
-            ],
-            [
-                "title" => "Pokój czteroosobowy z balkonem",
-                "img" => "assets/images/apartments/apartment-2.jpeg",
-                "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
-                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
-                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
-                consequatur ullam?",
-                "surface" => "50 m2",
-                "persons" => 'max 4 os.',
-                "bed" => 'dwuosobowe',
-                'link' => '#'
-            ],
-            [
-                "title" => "Pokój dwuosobowy",
-                "img" => "assets/images/apartments/apartment-3.jpeg",
-                "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
-                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
-                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
-                consequatur ullam?",
-                "surface" => "50 m2",
-                "persons" => 'max 4 os.',
-                "bed" => 'dwuosobowe',
-                'link' => '#'
-            ],
-        ];
+        // $apartments = [
+        //     [
+        //         "title" => "Pokój z dwoma łóżkami typu King-Size",
+        //         "img" => "assets/images/apartments/apartment-1.jpg",
+        //         "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+        //         officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+        //         eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+        //         consequatur ullam?",
+        //         "surface" => "50 m2",
+        //         "persons" => 'max 4 os.',
+        //         "bed" => 'dwuosobowe',
+        //         'link' => '#'
+        //     ],
+        //     [
+        //         "title" => "Pokój czteroosobowy z balkonem",
+        //         "img" => "assets/images/apartments/apartment-2.jpeg",
+        //         "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+        //         officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+        //         eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+        //         consequatur ullam?",
+        //         "surface" => "50 m2",
+        //         "persons" => 'max 4 os.',
+        //         "bed" => 'dwuosobowe',
+        //         'link' => '#'
+        //     ],
+        //     [
+        //         "title" => "Pokój dwuosobowy",
+        //         "img" => "assets/images/apartments/apartment-3.jpeg",
+        //         "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
+        //         officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
+        //         eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+        //         consequatur ullam?",
+        //         "surface" => "50 m2",
+        //         "persons" => 'max 4 os.',
+        //         "bed" => 'dwuosobowe',
+        //         'link' => '#'
+        //     ],
+        // ];
 
 
-        return view('pages.apartments.index', ['apartments' => $apartments]);
+        return view('pages.apartments.index', ['apartments' => $this->apartments]);
     }
 
     public function gallery()
