@@ -8,11 +8,6 @@
         {{-- add call for food button --}}
 
     </x-base.header>
-
-
-
-
-
    
 <!--GALLERY STYLE in scss/gallery.scss -->
     <section id="projects">
@@ -28,7 +23,39 @@
        
           <div class="grid-gallery">
 
-            <div class="grid-item" data-name='1'>
+
+             {{-- APARTMENT 1 --}}
+             @foreach ($apartment1 as $img)
+             <div class="grid-item" data-name='1'>
+                 <a href="{{ asset($img['full']) }}" class="glightbox">
+                     <img src="{{ asset($img['thumbnail']) }}"
+                         alt="apartment-1" 
+                         loading="lazy" />
+                 </a>
+             </div>
+         @endforeach
+             {{-- APARTMENT 1 --}}
+             @foreach ($apartment2 as $img)
+             <div class="grid-item" data-name='2'>
+                 <a href="{{ asset($img['full']) }}" class="glightbox">
+                     <img src="{{ asset($img['thumbnail']) }}"
+                         alt="apartment-2" 
+                         loading="lazy" />
+                 </a>
+             </div>
+         @endforeach
+             {{-- APARTMENT 1 --}}
+             @foreach ($apartment3 as $img)
+             <div class="grid-item" data-name='3'>
+                 <a href="{{ asset($img['full']) }}" class="glightbox">
+                     <img src="{{ asset($img['thumbnail']) }}"
+                         alt="apartment-3" 
+                         loading="lazy" />
+                 </a>
+             </div>
+         @endforeach
+
+            {{-- <div class="grid-item" data-name='1'>
                 <a href="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class="glightbox">
                     <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" alt="image" />
                 </a>
@@ -127,7 +154,7 @@
                 <a href="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" class="glightbox">
                     <img src="{{ asset('assets/images/apartments/apartment-5.jpeg') }}" alt="image" />
                 </a>
-            </div>
+            </div> --}}
 
         </div>
       </div>

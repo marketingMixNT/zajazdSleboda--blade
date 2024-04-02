@@ -17,10 +17,7 @@
                 slidesPerView: 2,
                 spaceBetween: 70,
             },
-            '1600': {
-                slidesPerView: 3,
-                spaceBetween: 70,
-            },
+            
         }"
         class="mySwiper"
     >
@@ -31,7 +28,7 @@
         >
             <div class="border border-black w-full h-full relative">
                 <img
-                    :src="apartament.image"
+                    :src="apartament.img"
                     alt=""
                     class="w-full h-[75%] sm:h-[80%] object-cover"
                 />

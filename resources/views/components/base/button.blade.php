@@ -6,7 +6,7 @@
 ])
 
 
-<a {{ $href }}>
+<a href="{{ $href }}">
     <button type="button"
         class="border   px-8 py-3 uppercase text-xs duration-300  
         {{ $type === 'primary' ? ' border-black bg-transparent hover:text-white  close' : '' }} 

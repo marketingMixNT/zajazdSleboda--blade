@@ -9,34 +9,6 @@ use App\Services\MenuService;
 
 class MainController extends Controller
 {
-
-    //MAKE ONE ARRAY WITH APARTMENT COMPATIBILE WITH ALL COMPONENTS change image to img etc...
-    //THE SAME FOR MENU
-    //FOR MENU LIST MAKE NEW CLASS
-    // class MenuService
-    // {
-    //     public function getDesserts()
-    //     {
-    //         return [
-    //             [
-    //                 "title" => "Puchar lodowy",
-    //                 "ingredients" => "3 gałki lodów, bita śmietana, owoce, polewa",
-    //                 "price" => "20",
-    //             ],
-    //             [
-    //                 "title" => "Szarlotka z bitą śmietaną",
-    //                 "ingredients" => "",
-    //                 "price" => "15",
-    //             ],
-    //             [
-    //                 "title" => "Szarlotka na ciepło z gałką lodów",
-    //                 "ingredients" => "",
-    //                 "price" => "18",
-    //             ],
-    //         ];
-    //     }
-    // }
-
     private function imageCollection(string $path)
     {
 
@@ -47,6 +19,24 @@ class MainController extends Controller
         })->shuffle()->toArray();
 
         return $imagesArray;
+    }
+
+    private function imageGalleryCollection(string $apartment)
+    {
+        $bigImages = File::files(public_path("/assets/images/apartments/{{$apartment}}/"));
+        $smallImages = File::files(public_path("/assets/images/apartments/{{$apartment}}/mobile"));
+
+        return collect($bigImages)->map(function ($bigImage) use ($smallImages) {
+            $filename = $bigImage->getFilename();
+            $smallImage = collect($smallImages)->first(function ($smallImage) use ($filename) {
+                return $smallImage->getFilename() === $filename;
+            });
+
+            return [
+                'thumbnail' => $smallImage ? asset(str_replace(public_path(), '', $smallImage->getPathname())) : null,
+                'full' => asset(str_replace(public_path(), '', $bigImage->getPathname())),
+            ];
+        })->shuffle()->toArray();
     }
 
 
@@ -105,40 +95,33 @@ class MainController extends Controller
     }
     public function singleApartament()
     {
-
-
-        $images = $this->imageCollection('apartment');
-
-        $apartments = [
-            [
-                'title' => 'Apartament 1',
-                'image' =>  '/assets/images/apartments/apartment-1.jpg'
-            ],
-            [
-                'title' => 'Apartament 2',
-                'image' =>  '/assets/images/apartments/apartment-2.jpeg'
-            ],
-            [
-                'title' => 'Apartament 3',
-                'image' =>  '/assets/images/apartments/apartment-3.jpeg'
-            ],
-            [
-                'title' => 'Apartament 4',
-                'image' =>  '/assets/images/apartments/apartment-4.jpeg'
-            ],
-            [
-                'title' => 'Apartament 5',
-                'image' =>  '/assets/images/apartments/apartment-5.jpeg'
-            ],
+        $images = [
+            ['img' => 'assets/images/apartments/apartment-1.jpg'],
+            ['img' => 'assets/images/apartments/apartment-2.jpeg'],
+            ['img' => 'assets/images/apartments/apartment-3.jpeg'],
+            ['img' => 'assets/images/apartments/apartment-4.jpeg'],
+            ['img' => 'assets/images/apartments/apartment-5.jpeg'],
         ];
 
-        return view('pages.single-apartament.index', ['images' => $images, 'apartaments' => $apartments]);
+        $otherApartments = collect($this->apartments)->filter(function ($apartment) {
+            return $apartment['id'] == 1 || $apartment['id'] == 3;
+        })->values();
+
+
+
+        return view('pages.single-apartament.index', ['images' => $images, 'apartaments' => $otherApartments]);
     }
 
 
     public function gallery()
     {
-        return view('pages.gallery.index');
+
+        $apartment1 = $this->imageGalleryCollection('apartment-1');
+        $apartment2 = $this->imageGalleryCollection('apartment-2');
+        $apartment3 = $this->imageGalleryCollection('apartment-3');
+
+
+        return view('pages.gallery.index',['apartment1'=>$apartment1,'apartment2'=>$apartment2,'apartment3'=>$apartment3]);
     }
 
     public function contact()

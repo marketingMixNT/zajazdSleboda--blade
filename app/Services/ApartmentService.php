@@ -8,6 +8,7 @@ class ApartmentService
     {
         return [
             [
+                "id"=>"1",
                 "title" => "Pokój z dwoma łóżkami King-Size",
                 "img" => "assets/images/apartments/apartment-1.jpg",
                 'link' => '#',
@@ -20,6 +21,7 @@ class ApartmentService
                 "bed" => 'dwuosobowe',
             ],
             [
+                "id"=>"2",
                 "title" => "Pokój czteroosobowy z balkonem",
                 "img" => "assets/images/apartments/apartment-2.jpeg",
                 'link' => '#',
@@ -32,6 +34,7 @@ class ApartmentService
                 "bed" => 'dwuosobowe',
             ],
             [
+                "id"=>"3",
                 "title" => "Pokój dwuosobowy",
                 "img" => "assets/images/apartments/apartment-3.jpeg",
                 'link' => '#',
