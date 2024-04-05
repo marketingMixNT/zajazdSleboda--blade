@@ -93,25 +93,7 @@ class MainController extends Controller
 
         return view('pages.menu.index', ['chefChoice' => $chefChoice, 'salad' => $salad, 'appetizers' => $appetizers, 'soups' => $soups, 'chickenSets' => $chickenSets, 'meatSets' => $meatSets, 'otherSets' => $otherSets, 'additives' => $additives, 'desserts' => $desserts]);
     }
-    // public function singleApartament()
-    // {
-    //     $images = [
-    //         ['img' => 'assets/images/apartments/apartment-1.jpg'],
-    //         ['img' => 'assets/images/apartments/apartment-2.jpeg'],
-    //         ['img' => 'assets/images/apartments/apartment-3.jpeg'],
-    //         ['img' => 'assets/images/apartments/apartment-4.jpeg'],
-    //         ['img' => 'assets/images/apartments/apartment-5.jpeg'],
-    //     ];
-
-    //     $otherApartments = collect($this->apartments)->filter(function ($apartment) {
-    //         return $apartment['id'] == 1 || $apartment['id'] == 3;
-    //     })->values();
-
-
-
-    //     return view('pages.single-apartament.index', ['images' => $images, 'apartaments' => $otherApartments]);
-    // }
-
+  
     public function apartment_one()
     {
         $apartmentService = new ApartmentService();
@@ -124,6 +106,32 @@ class MainController extends Controller
         })->values();
 
         return view('pages.apartments.apartment-one.index', ['images' => $images, 'apartaments' => $otherApartments, 'apartment' => $apartment]);
+    }
+    public function apartment_two()
+    {
+        $apartmentService = new ApartmentService();
+        $apartment = $apartmentService->getApartmentById('2');
+
+        $images = $this->imageCollection('apartment_two');
+
+        $otherApartments = collect($this->apartments)->filter(function ($apartment) {
+            return $apartment['id'] == 1 || $apartment['id'] == 3;
+        })->values();
+
+        return view('pages.apartments.apartment-two.index', ['images' => $images, 'apartaments' => $otherApartments, 'apartment' => $apartment]);
+    }
+    public function apartment_three()
+    {
+        $apartmentService = new ApartmentService();
+        $apartment = $apartmentService->getApartmentById('3');
+
+        $images = $this->imageCollection('apartment_three');
+
+        $otherApartments = collect($this->apartments)->filter(function ($apartment) {
+            return $apartment['id'] == 1 || $apartment['id'] == 2;
+        })->values();
+
+        return view('pages.apartments.apartment-three.index', ['images' => $images, 'apartaments' => $otherApartments, 'apartment' => $apartment]);
     }
 
 

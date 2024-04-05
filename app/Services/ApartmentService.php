@@ -20,27 +20,22 @@ class ApartmentService
             [
                 "id"=>"2",
                 "title" => "Pokój czteroosobowy z balkonem",
-                "img" => "assets/images/apartments/apartment-2.jpeg",
-                'link' => '#',
-                "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
-                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
-                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
+                "img" => "assets/images/apartment_two/pokój_czteroosobowy_z_balkonem-9.jpg",
+                'link' => route('apartment_two'),
+                "description" => "Nasz pokój czteroosobowy wyposażony jest w telewizor z płaskim ekranem i dostępem do usług streamingowych, prywatną łazienkę oraz balkon. W pokoju znajdują się 2 wygodne łóżka, zapewniające komfortowy wypoczynek dla czterech osób.,
                 consequatur ullam?",
-                "surface" => "50 m2",
+                "surface" => "39 m2",
                 "persons" => 'max 4 os.',
-                "bed" => 'dwuosobowe',
+                "bed" => '2x dwuosobowe',
             ],
             [
                 "id"=>"3",
                 "title" => "Pokój dwuosobowy",
-                "img" => "assets/images/apartments/apartment-3.jpeg",
-                'link' => '#',
-                "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita amet possimus eaque
-                officiis earum obcaecati! Animi, necessitatibus molestias? Qui soluta doloremque, laudantium error
-                eaque culpa in debitis a earum nesciunt! Voluptatum blanditiis ex quam recusandae nulla numquam,
-                consequatur ullam?",
-                "surface" => "50 m2",
-                "persons" => 'max 4 os.',
+                "img" => "assets/images/apartment_three/pokój_dwuosobowy-5.jpg",
+                'link' => route('apartment_three'),
+                "description" => "Pokój dwuosobowy wyposażony jest w prywatną łazienkę z prysznicem. Przestronny pokój oferuje czajnik elektryczny, podłogi z parkietu, ogrzewanie oraz telewizor z płaskim ekranem i dostępem do usług streamingowych. W pokoju znajduje się 1 wygodne łóżko, zapewniające idealne warunki do odpoczynku.",
+                "surface" => "28 m2",
+                "persons" => 'max 2 os.',
                 "bed" => 'dwuosobowe',
             ],
         ];
