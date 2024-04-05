@@ -13,7 +13,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
     Route::get('/galeria', [MainController::class, 'gallery'])->name('gallery');
     Route::get('/restauracja', [MainController::class, 'restaurant'])->name('restaurant');
     Route::get('/menu', [MainController::class, 'menu'])->name('menu');
-    Route::get('/pokój', [MainController::class, 'singleApartament'])->name('apartment');
+    Route::get('/pokój-z-2-łóżkami-typu-king-size', [MainController::class, 'apartment_one'])->name('apartment_one');
     Route::get('/kontakt', [MainController::class, 'contact'])->name('contact');
     Route::post('/kontakt', [FormController::class, 'contact_form'])->name('contact_form');
     Route::get('/polityka-prywatnosci', [MainController::class, 'privacy_policy'])->name('privacy_policy');

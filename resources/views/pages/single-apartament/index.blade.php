@@ -1,9 +1,9 @@
 <x-layouts.master>
 
-    @section('title', 'Apartamenty Zajazd Śleboda')
-    @section('description', 'desc')
+    @section('title', 'Pokój z 2 Łóżkami King-Size w Zajazd Śleboda: Komfort i Relaks')
+    @section('description', 'Odkryj luksusowy pokój z 2 łóżkami king-size w Zajazd Śleboda. Idealne miejsce dla par i rodzin szukających wygody. Rezerwuj teraz i ciesz się niezapomnianym pobytem!')
 
-    @include('pages.single-apartament.sections.header')
+    @include('pages.apartments.apartment-one.sections.header')
 
     <main class='pt-24'>
         <!--CONTAINER -->
@@ -34,7 +34,7 @@
                 <img src="{{ asset('assets/images/apartments/apartment-1.jpg') }}" class='pr-32 h-[400px]' />
 
                 <!--AMENITIES -->
-                @include('pages.single-apartament.sections.amenities')
+                @include('pages.apartments.apartment-one.sections.amenities')
 
             </div>
 
@@ -47,10 +47,10 @@
             </div>
         </section>
         <!--INFO -->
-      @include('pages.single-apartament.sections.info')
+      @include('pages.apartments.apartment-one.sections.info')
     </main>
 
     <!--OTHER ROOMS -->
-   @include('pages.single-apartament.sections.other-rooms')
+   @include('pages.apartments.apartment-one.sections.other-rooms')
 
 </x-layouts.master>

@@ -10,7 +10,7 @@ class="relative flex flex-col justify-center items-center h-[calc(80vh-84px)]  s
         <h1
             class="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl tracking-wider uppercase font-heading font-bold heading-animation"
         >
-           {{$apartment['title']}}
+            {{$apartment['title']}}
         </h1>
 
         <x-base.button type='secondary' class="lg:hidden mt-12" href="#" aria-label="Rezerwuj">Rezerwuj</x-base.button> 

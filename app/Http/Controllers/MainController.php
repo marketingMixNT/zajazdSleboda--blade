@@ -93,23 +93,37 @@ class MainController extends Controller
 
         return view('pages.menu.index', ['chefChoice' => $chefChoice, 'salad' => $salad, 'appetizers' => $appetizers, 'soups' => $soups, 'chickenSets' => $chickenSets, 'meatSets' => $meatSets, 'otherSets' => $otherSets, 'additives' => $additives, 'desserts' => $desserts]);
     }
-    public function singleApartament()
+    // public function singleApartament()
+    // {
+    //     $images = [
+    //         ['img' => 'assets/images/apartments/apartment-1.jpg'],
+    //         ['img' => 'assets/images/apartments/apartment-2.jpeg'],
+    //         ['img' => 'assets/images/apartments/apartment-3.jpeg'],
+    //         ['img' => 'assets/images/apartments/apartment-4.jpeg'],
+    //         ['img' => 'assets/images/apartments/apartment-5.jpeg'],
+    //     ];
+
+    //     $otherApartments = collect($this->apartments)->filter(function ($apartment) {
+    //         return $apartment['id'] == 1 || $apartment['id'] == 3;
+    //     })->values();
+
+
+
+    //     return view('pages.single-apartament.index', ['images' => $images, 'apartaments' => $otherApartments]);
+    // }
+
+    public function apartment_one()
     {
-        $images = [
-            ['img' => 'assets/images/apartments/apartment-1.jpg'],
-            ['img' => 'assets/images/apartments/apartment-2.jpeg'],
-            ['img' => 'assets/images/apartments/apartment-3.jpeg'],
-            ['img' => 'assets/images/apartments/apartment-4.jpeg'],
-            ['img' => 'assets/images/apartments/apartment-5.jpeg'],
-        ];
+        $apartmentService = new ApartmentService();
+        $apartment = $apartmentService->getApartmentById('1');
+
+        $images = $this->imageCollection('apartment_one');
 
         $otherApartments = collect($this->apartments)->filter(function ($apartment) {
-            return $apartment['id'] == 1 || $apartment['id'] == 3;
+            return $apartment['id'] == 2 || $apartment['id'] == 3;
         })->values();
 
-
-
-        return view('pages.single-apartament.index', ['images' => $images, 'apartaments' => $otherApartments]);
+        return view('pages.apartments.apartment-one.index', ['images' => $images, 'apartaments' => $otherApartments, 'apartment' => $apartment]);
     }
 
 
@@ -121,7 +135,7 @@ class MainController extends Controller
         $apartment3 = $this->imageGalleryCollection('apartment-3');
 
 
-        return view('pages.gallery.index',['apartment1'=>$apartment1,'apartment2'=>$apartment2,'apartment3'=>$apartment3]);
+        return view('pages.gallery.index', ['apartment1' => $apartment1, 'apartment2' => $apartment2, 'apartment3' => $apartment3]);
     }
 
     public function contact()
